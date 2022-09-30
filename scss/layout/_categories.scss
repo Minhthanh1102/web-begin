@@ -12,6 +12,13 @@
         margin: 0 120px;
         height: 662px;
         justify-content: center;
+        @include sm-desk{
+            display: flex;
+            justify-content: center;
+            .categories-select-all{
+                margin-left: 0;
+            }            
+        }
         @include mobile{
             margin: 0 20px;
             height: auto;
@@ -45,6 +52,9 @@
                 img{
 
                     position: absolute;
+                    @include sm-desk{
+                        width: 200px;
+                    }
                     @include mobile{
                         width: 115px;
                         height: 198px;

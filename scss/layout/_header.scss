@@ -1,5 +1,8 @@
 .wrapper{
     max-width: 1440px;
+    @include sm-desk{
+        max-width: 1024px;
+    }
 }
 .header {
     background-color: #fff;
@@ -9,6 +12,14 @@
     top: 0;
     z-index: 1;
     // left: 0;
+    @include sm-desk{
+        max-width: 1366px;
+        width: 100%;
+        .header-container-search{
+            width: 65%;
+            margin: 0 15px;
+        }
+    }
     @include mobile{
         // max-width: 739px;
         // width: 54%;
@@ -184,14 +195,17 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
-            span{
-                font-size: 14px;
-            }
             span, img {
-                display: block;
+                // display: block;
                 margin-left: 5px;
             }
         }   
+        span{
+            font-size: 14px;
+            @include sm-desk{
+                display: none;
+            }
+        }
         &-search{
             padding: 10px;
             margin-left: 62px;

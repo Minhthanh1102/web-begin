@@ -1,5 +1,9 @@
 .footer {
     &-image{
+        @include sm-desk{
+            width: 100%;
+            height: 40%;
+        }
         &--mobile{
             display: none;
             img{
