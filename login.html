@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="link logo" />
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header header-signup">
+      <div class="header-container">
+        <div class="header-container-menu">
+          <img src="img/menu.svg" alt="">
+        </div>
+        <div class="header-container-logo">
+          <img src="./img/Group 7.svg" alt="logo">
+          <p>Mua sắm vô cực</p>
+      </div>
+      <div class="header-container-search">
+        <input  class="header-container-search-input" type="text" placeholder="Sản phẩm tìm kiếm...">
+          <img src="./img/search.svg" alt="">
+      </div>
+      <div class="header-container-order">
+        <img src="./img/package.svg" alt="vector">
+        <span>Tra cứu đơn hàng</span>
+      </div>
+      <div class="header-container-more">
+        <a class="header-container-more--user" href="#">
+          <img src="./img/user-check.svg" alt="">
+          <ul class="header-container-more--login">
+            
+            <li>
+              <!-- <a href="login.html">ĐĂNG NHẬP</a> -->
+              ĐĂNG NHẬP</li>
+            <li>ĐĂNG KÝ
+              <!-- <a href="signup.html">ĐĂNG KÝ</a> -->
+            </li>
+          </ul>
+        </a>
+        <a class="header-container-more--cart" href="#">
+          <img src="./img/shopping-cart.svg" alt="">
+        </a>
+      </div>
+        </div>
+      <div class="header-categories">
+        <div class="header-categories-home header-categories-items">
+          <p>TRANG CHỦ</p>
+        </div>
+        <div class="header-categories-deal header-categories-items">
+          HOTDEAL
+          <ul class="header-categories--menu">
+            <li>SẢN PHẨM KHUYẾN MÃI</li>
+            <li>SẢN PHẨM MỚI</li>
+            <li>SẢN PHẨM BÁN CHẠY</li>
+          </ul>
+          <!-- <select name="" id="">
+            <option value="">HOTDEAL</option>
+            <option value="">SẢN PHẨM KHUYẾN MÃI</option>
+            <option value="">SẢN PHẨM MỚI</option>
+            <option value="">SẢN PHẨM BÁN CHẠY</option>
+          </select> -->
+          <i class="fa-sharp fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="header-categories-deal header-categories-items">
+          NAM
+          <ul class="header-categories--menu">
+            <li>
+              <a href="#">ÁO THUN NAM</a>
+            </li>
+            <li>
+              <a href="#">ÁO SƠ MI NAM</a>
+              </li>
+            <li>QUẦN SHORT NAM</li>
+            <li>QUẦN DÀI NAM</li>
+            <li>PHỤ KIỆN NAM</li>
+          </ul>
+          <i class="fa-sharp fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="header-categories-deal header-categories-items">
+          NỮ
+          <ul class="header-categories--menu">
+            <li>ÁO THUN NỮ</li>
+            <li>SƠ MI NỮ</li>
+            <li>ĐẦM - VÁY</li>
+            <li>QUẦN SHORT NỮ</li>
+            <li>QUẦN DÀI NỮ</li>
+            <li>PHỤ KIỆN NỮ</li>
+          </ul>
+          <i class="fa-sharp fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="header-categories-shop header-categories-items">CỬA HÀNG</div>
+        <div class="header-categories-deal header-categories-items">
+          HỖ TRỢ
+          <ul class="header-categories--menu header-categories--help">
+            <li class="header-categories--border">LIÊN HỆ</li>
+            <li class="header-categories--border">CHÍNH SÁCH</li>
+            <li class="header-categories--list">CHÍNH SÁCH MUA HÀNG</li>
+            <li class="header-categories--list">CHÍNH SÁCH ĐỔI TRẢ</li>
+            <li class="header-categories--list">CHÍNH SÁCH BẢO MẬT</li>
+          </ul>
+          <i class="fa-sharp fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </header>
+<body>
+    <div class="overview">
+        <div class="cricle cricle-hide">
+            <a href="index.html">Trang chủ</a>
+            <span>|</span>
+            <a>Đăng nhập</a>
+        </div>
+        <form class="form">
+            <div class="form_head">
+                <h3 class="form_title">ĐĂNG NHẬP</h3>
+            </div>
+
+            <div class="form-group">
+                <div class="input">
+                    <h5 class="input_title">Tên tài khoản <span>*</span></h5>
+                    <input class="input_text" type="text" placeholder="">
+                </div>
+                <div class="input">
+                    <h5 class="input_title">Mật khẩu <span>*</span></h5>
+                    <div class="icon_eye_input input_text">
+                        <input id="inputPassword" type="password" placeholder="">
+                        <div class="icon_eye">
+                            <ion-icon id="eye_close" class="eye_close" name="eye-off-outline"></ion-icon>
+                            <ion-icon id="eye_open" class="eye_open active" name="eye-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox"> 
+                <input type="radio" id="checkbox_accept">
+                <p>Nhớ tài khoản<a class="checkbox--name" href="">Quên mật khẩu</a></p>
+            </div>
+                <button type="submit" id="btn_submit" class="checkbox-bottom hidden">Đăng nhập</button>
+            <div class="checkbox-border">
+                <div class="checkbox-border--line"></div>
+                <!-- <div class="checkbox-border--text">
+                    <span>Hoặc</span>
+                </div>
+                <div class="checkbox-border--line"></div> -->
+            </div>
+            <div class="button-other">
+                <div class="button-other--fb">
+                    <button>Facebook</button>
+                </div>
+                <div class="button-other--gg">
+                    <button>Google</button>
+                </div>
+            </div>
+            <div class="loginnow">
+                Bạn đã có tài khoản chưa? <a href="signup.html">Đăng ký ngay</a>               
+            </div>
+        </form>
+    </div>
+    <script src="./js/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<div class="footer footer-signup">
+  <div class="footer-categories">
+    <a href="">
+      ÁO NAM
+    </a>
+    <a href="">
+      ÁO NỮ
+    </a>
+    <a href="">
+      QUẦN NAM
+    </a>
+    <a href="">
+      QUẦN NỮ
+    </a>
+    <a href="">
+      ĐẦM/VÁY
+    </a>
+    <a href="">
+      PHỤ KIỆN
+    </a>
+  </div>
+<div class="footer-images">
+  <img class="footer-image" src="img/banner/Rectangle 4 (10).png" alt="">
+  <img class="footer-image" src="img/banner/Rectangle 88.png" alt="">
+  <img class="footer-image--mobile" src="img/Rectangle 87.png" alt="">
+  
+</div>
+
+  <div class="container">
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="#" class="menu-link first">THÔNG TIN CỬA HÀNG</a>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">Giới thiệu </a>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="menu-link">Hỗ trợ</a>
+      </li>
+    </ul>
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="#" class="menu-link first">HỆ THỐNG CỬA HÀNG</a>
+      </li>
+      <li class="menu-item">
+        <img src="img/icon/map-pin.svg" alt="">
+        <a href="#" class="menu-link">Cn1: 141 Nguyễn Thái Bình, Quận 1 - 028 777 66 789</a>
+      </li>
+      <li class="menu-item">
+        <img src="img/icon/map-pin.svg" alt="">
+        <a href="#" class="menu-link">Cn2: 223/4/12 Võ Văn Tần, Quận 3 - 028 777 66 779</a>
+      </li>
+      <li class="menu-item">
+        <img src="img/icon/map-pin.svg" alt="">
+        <a href="#" class="menu-link">Cn3: 798/1 Sư Vạn Hạnh, Quận 10 - 028 777 66 789</a>
+      </li>
+    </ul>
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="#" class="menu-link first">CHÍNH SÁCH</a>
+      </li>
+      <li class="menu-item">
+        <img src="img/icon/send.svg" alt="">
+        <a href="#" class="menu-link">Chính sách mua hàng </a>
+      </li>
+      <li class="menu-item">
+        <img src="img/icon/send.svg" alt="">
+        <a href="#" class="menu-link">Chính sách đổi trả</a>
+      </li>
+      <li class="menu-item">
+        <img src="img/icon/send.svg" alt="">
+        <a href="#" class="menu-link">Chính sách bảo mật</a>
+      </li>
+    </ul>
+    <ul class="menu">
+      <li class="menu-item">
+        <a href="#" class="menu-link first">HỆ THỐNG CỬA HÀNG</a>
+      </li>
+      <div class="menu-item--img">
+        <img src="img/icon/image 2.png" alt="">
+        <img src="img/icon/ZALO.png" alt="">
+        <img src="img/icon/MOMO.png" alt="">
+        <img src="img/icon/MASTER.png" alt="">
+      </div>
+      <div class="menu-item--img2">
+        <img src="img/icon/image 1.png" alt="">
+      </div>
+    </ul>
+    
+
+  </div>
+</div>
+  
+  <div class="loading"></div>
+  <div class="wrapper">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+      <script src="js/eyes.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+  </html>
+  

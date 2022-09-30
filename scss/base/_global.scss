@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html{
+    font-family: 'fw-regular';
+    font-size: 62.5%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+body{
+  margin: 0 auto;
+  overflow-x: hidden;
+
+}
+.wrapper{
+   margin: 0 auto;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+
+// tablet - mobile
+@media (max-width: 1023px){
+  .hide-on-mobile-tablet{
+      display: none !important;
+  }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+  .hide-on-tablet{
+      display: none !important;
+  }
+}
+/* Mobile */
+@media (max-width: 739px){
+  .hide-on-mobile{
+      display: none !important;
+  }
+}
