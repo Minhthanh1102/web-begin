@@ -7,13 +7,16 @@
     margin-bottom: 120px;
     margin-top: 60px;
     @include mobile{
-        margin: 0;
+        // margin: 0;
+        margin-top: 0;
+        
     }
 }
 .cricle{
     // transform: translateY(163px);
-    margin-top: 160px;
-    margin-left: 125px;
+    // margin-top: 160px;
+    transform: translateY(134px);
+    margin-left: 20px;
     font-size: 12px;
     @include mobile{
         margin-top: 100px;
@@ -29,6 +32,9 @@
         margin-right: 8px;
     }
 }
+.form-signup{
+    transform: translate(-50%, -35%) !important;
+}
 .form{
     position: absolute;
     left: 50%;
@@ -40,7 +46,7 @@
     max-width: 378px;
     width: 100%;
     @include mobile{
-        top: 35%;
+        // top: 35%;
     }
     &_head{
         // margin-bottom: 20px;

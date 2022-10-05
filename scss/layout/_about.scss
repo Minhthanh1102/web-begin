@@ -2,10 +2,22 @@
     background: #FFFFFF;
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    max-width: 792px;
+    max-width: 722px;
     width: 100%;
-    margin-left: 120px;
-    transform: translateY(-105px);
+    margin-left: 60px;
+    transform: translateY(-200px);
+    margin-top: 30px;
+    @include sm-desk{
+        margin-left: 20px;
+        max-width: 585px;
+        transform: translateY(-210px);
+    }
+    @include tablet{
+        transform: unset;
+        margin-top: 20px;
+        padding: 0 20px;
+        max-width: 712px;
+    }
     @include mobile{
         display: none;
     }
@@ -39,6 +51,9 @@
                 font-weight: bold;
                 margin-left: 68px;
                 margin-top: 25px;
+                @include sm-desk{
+                    margin-left: 30px;
+                }
             }
             &--box{
                 display: flex;
@@ -48,11 +63,17 @@
             &--sum{
                 font-size: 18px;
                 font-weight: bold;
+                @include sm-desk{
+                    font-size: 15px;
+                }
             }
             &--new{
                 color: #FF7A00;
                 font-size: 22px;
                 font-weight: bold;
+                @include sm-desk{
+                    font-size: 15px;
+                }
             }
             &--old{
                 text-decoration-line: line-through;
@@ -60,6 +81,9 @@
                 mix-blend-mode: normal;
                 font-size: 12px;
                 transform: translateY(10px);
+                @include sm-desk{
+                    transform: translateY(5px);
+                }
             }
             &--percent{
                 font-style: normal;
@@ -69,6 +93,9 @@
                 text-align: right;
                 color: #D40000;
                 transform: translateY(10px);
+                @include sm-desk{
+                    transform: translateY(5px);
+                }
             }
         }
         &-price{
@@ -79,6 +106,9 @@
             &-box{
                 display: flex;
                 margin-bottom: 15px;
+                @include sm-desk{
+                    margin-bottom: 5px;
+                }
             }
             &--new{
                 font-style: normal;
@@ -87,6 +117,9 @@
                 line-height: 23px;
                 color: #FF7A00;
                 mix-blend-mode: normal;
+                @include sm-desk{
+                    font-size: 15px;
+                }
             }
             &--old{
                 font-style: normal;
@@ -98,10 +131,16 @@
                 mix-blend-mode: normal;
                 margin-left: 5px;
                 transform: translateY(7px);
+                @include sm-desk{
+                    // transform: translateY(5px);
+                }
             }
             &--plus{
                 justify-content: flex-end;
                 margin-left: 53px;
+                @include sm-desk{
+                    margin-left: 10px;
+                }
             }
         }
         &-name{
@@ -111,6 +150,10 @@
             color: #000000;
             margin-bottom: 20px;
             margin-left: 16px;
+            @include sm-desk{
+                font-size: 13px;
+                margin: 0 5px;
+            }
             p{
                 margin-top: 0px;
             }
@@ -136,8 +179,11 @@
 }
 .about{
     margin: 0;
-    margin-left: 120px;
+    margin-left: 60px;
     display: flex;
+    @include sm-desk{
+        margin: 0 20px;
+    }
     @include mobile{
         flex-wrap: wrap;
         margin: 0;
@@ -149,6 +195,7 @@
             order: 1;
         }
         img{
+            width: 100%;
             @include mobile{
                 width: 390px;
                 height: 390px;
@@ -157,6 +204,9 @@
         }
     }
     &-infor{
+        @include tablet{
+            max-width: 300px;
+        }
         @include mobile{
             order: 3;
         }
@@ -182,6 +232,9 @@
             height: 39px;
             // height: 100%;
             margin-left: 70px;
+            @include tablet{
+                margin-left: 10px;  
+            }
             input{
                 max-width: 69px;
                 width: 100%;
@@ -229,15 +282,9 @@
                     text-decoration: none;
                     color: #fff;
                     font-size: 16px;
-                    // background-color:transparent ;
-                    // border: none;
-                    // outline: none;
-                    // color: #fff;
-                    // border-radius: 50px;
-                    // min-width: 150px;
-                    // padding: 12px 48px;
-                    // cursor: pointer;
-                    // transition: opacity 0.2s ease;
+                    @include tablet{
+                        font-size: 11px;
+                    }
                     @include mobile{
                         display: none;
                     }
@@ -247,18 +294,9 @@
                     background: #333333;
                     border-radius: 5px;
                     font-style: normal;
-                    // font-weight: 700;
-                    // font-size: 16px;
-                    // line-height: 18px;
-                    // /* or 112% */
-
-                    // display: flex;
-                    // align-items: center;
-                    // text-align: center;
-                    // letter-spacing: 0.03em;
-                    // text-transform: uppercase;
-
-                    // color: #FFFFFF;
+                    @include tablet{
+                        margin-right: 10px;
+                    }
                 }
                 &--buy{
                     background: #FF7A00;
@@ -294,6 +332,7 @@
             &--name{
                 display: flex;
                 flex-wrap: nowrap;
+                align-items: center;
                 p{
                     font-style: normal;
                     font-weight: bold;
@@ -301,6 +340,9 @@
                     line-height: 30px;
                     color: #000000;
                     margin: 0;
+                    @include tablet{
+                        font-size: 18px;
+                    }
                     @include mobile{
                         display: none;
                     }
@@ -327,10 +369,17 @@
         &--size{
             &--all{
                 margin-right: 21px;
+                @include tablet{
+                    font-size: 25px;
+                    margin-right: 10px;
+                }
                 p{
                     display: inline-block;
                     margin-top: 0;
                     margin-bottom: 0;
+                    @include tablet{
+                        font-size: 25px;
+                    }
                 }
             }
             &--s{
@@ -407,6 +456,9 @@
                 text-align: center;
                 // max-height: 40px;
                 // height: 100%;
+                @include tablet{
+                    margin: 0;
+                }
                 a{
                     font-weight: 300;
                     font-size: 16px;
@@ -425,6 +477,15 @@
                 color: #000000;
                 margin: 0;
                 padding-bottom: 14px;
+                @include tablet{
+                    padding: 0;
+                    margin-bottom: 5px;
+                }
+            }
+            img{
+                @include tablet{
+                    width: 50%;
+                }
             }
         }
         &--show{
@@ -436,6 +497,9 @@
             color: #000000;
             max-width: 385px;
             width: 100%;
+            @include tablet{
+                font-size: 14px;
+            }
         }
         &--text{
             font-style: normal;
@@ -456,6 +520,9 @@
                 color: #FF7A00;
                 mix-blend-mode: normal;
                 margin-right: 5px;
+                @include tablet{
+                    font-size: 18px;
+                }
                 @include mobile{
                     font-weight: 500;
                     font-size: 16px;
@@ -471,6 +538,9 @@
                 color: #333333;
                 margin-right: 5px;
                 transform: translateY(14px);
+                @include tablet{
+                    transform: translateY(10px);
+                }
                 @include mobile{
                     font-weight: 300;
                     font-size: 8px;
@@ -487,6 +557,9 @@
                 text-align: right;
                 text-transform: uppercase;
                 color: #FF7A00;
+                @include tablet{
+                    transform: translateY(-5px);
+                }
                 @include mobile{
                     display: none;
                 }
@@ -509,6 +582,7 @@
         }
         &-name{
             margin-bottom: 13px;
+            margin-bottom: 5px;
             @include mobile{
                 margin-bottom: 0;
             }
@@ -519,6 +593,12 @@
                 line-height: 33px;
                 text-transform: uppercase;
                 color: #333333;
+                @include sm-desk{
+                    font-size: 24px;
+                }
+                @include tablet{
+                    font-size: 18px;
+                }
                 @include mobile{
                     font-size: 18px;
                     font-weight: bold;
@@ -534,7 +614,24 @@
             color: #333, 0.2;
             width: 384px;
             opacity: 20%;
+            @include tablet{
+                max-width: 300px;
+                width: 100%;
+                max-width: 10px 0;
+            }
         }
+    }
+    &-item2{
+      display: none;  
+      @include tablet{
+        margin-top: 10px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 30%;
+        }
+      }
     }
     &-item{
         @include mobile{
@@ -545,11 +642,25 @@
             margin-top: 25px;
             max-height: 80px !important;
         }
+        &-hide{
+            display: none;
+            @include mobile{
+                display: unset;
+            }
+        }
         flex-direction: column;
-        flex-basis: 180px;
+        flex-basis: 178px;
         margin-right: 24px;
+        @include sm-desk{
+            flex-basis: 174px;
+            margin-right: 14px;
+        }
+        @include tablet{
+            display: none;
+        }
         img{
             margin-bottom: 20px;
+            width: 100%;
             @include mobile{
                 height: 62px;
                 width: 62px;
@@ -561,8 +672,16 @@
 }
 .description{
     display: flex;
-    margin-left: 106px;
-    transform: translateY(-75px);
+    margin-left: 46px;
+    transform: translateY(-150px);
+    @include sm-desk{
+        margin-left: 20px;
+    }
+    @include tablet{
+        transform: unset;
+        margin-top: 20px;
+        margin-left: 0;
+    }
     &-one{
         button{
             background-color: #000;
@@ -576,16 +695,21 @@
     }
     &-button{
         margin-left: 14px;
-
+        @include tablet{
+            margin-left: 20px;
+        }
         button{
             // max-width: 255px;
             // width: 100%;
-            width: 255px;
+            width: 232px;
             height: 72px;
             border-radius: 8px;
             // border: none;
             font-size: 16px;
             font-weight: bold;
+            @include sm-desk{
+                width: 223px;
+            }
             cursor: pointer;
             &:hover{
                 opacity: 0.9;
@@ -596,10 +720,18 @@
 .infor{
     border-radius: 8px;
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
-    max-width: 792px;
+    max-width: 722px;
     width: 100%;
-    margin-left: 120px;
-    transform: translateY(-62px);
+    margin-left: 60px;
+    transform: translateY(-112px);
+    @include sm-desk{
+        margin-left: 10px;
+    }
+    @include tablet{
+        transform: unset;
+        margin: 20px;
+        max-width: 712px;
+    }
     &-product{
         font-size: 16px;
         span{
@@ -609,14 +741,24 @@
             list-style: none;
             margin: 0;
             padding: 20px;
+            @include tablet{
+                padding: 20px 28px;
+            }
         }
     }
 }
 .rate{
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 120px;
+    margin-left: 60px;
     transform: translateY(-36px);
+    @include sm-desk{
+        margin-left: 20px;
+    }
+    @include tablet{
+        transform: unset;
+        margin: 20px;
+    }
     span{
         font-style: italic;
         font-weight: 300;
@@ -643,14 +785,18 @@
 }
 .user{
     &-box{
-        margin-left: 120px;
+        margin-left: 60px;
         background: #FFFFFF;
         border: 1px solid #C1C1C1;
         border-radius: 8px;
-        max-width: 792px;
+        max-width: 722px;
         width: 100%;
         flex-wrap: nowrap;
         margin-bottom: 30px;
+        @include sm-desk{
+            margin-left: 20px;
+            max-width: 712px;
+        }
         &-rate{
             text-align: end;
             margin-bottom: 12px;
@@ -706,7 +852,11 @@
         }
         &--like{
             // align-items: flex-end;
-            transform: translate(320px,50px);
+            transform: translate(260px,50px);
+            @include sm-desk{
+                transform: translate(250px,50px);
+
+            }
             span{
                 font-weight: 400;
                 font-size: 12px;

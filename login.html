@@ -17,13 +17,16 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="header header-signup">
+    <div class="wrapper">
+    <header class="header">
       <div class="header-container">
         <div class="header-container-menu">
           <img src="img/menu.svg" alt="">
         </div>
         <div class="header-container-logo">
-          <img src="./img/Group 7.svg" alt="logo">
+          <a href="index.html">
+            <img src="./img/Group 7.svg" alt="logo">
+          </a>
           <p>Mua sắm vô cực</p>
       </div>
       <div class="header-container-search">
@@ -35,33 +38,51 @@
         <span>Tra cứu đơn hàng</span>
       </div>
       <div class="header-container-more">
-        <a class="header-container-more--user" href="#">
+        <div class="header-container-more--user" href="login.html">
           <img src="./img/user-check.svg" alt="">
           <ul class="header-container-more--login">
             
             <li>
-              <!-- <a href="login.html">ĐĂNG NHẬP</a> -->
-              ĐĂNG NHẬP</li>
-            <li>ĐĂNG KÝ
-              <!-- <a href="signup.html">ĐĂNG KÝ</a> -->
+              <a href="login.html">ĐĂNG NHẬP</a>
+              </li>
+            <li>
+              <a href="signup.html">ĐĂNG KÝ</a>
             </li>
           </ul>
-        </a>
-        <a class="header-container-more--cart" href="#">
+        </div>
+        <div class="header-container-more--cart" href="#">
           <img src="./img/shopping-cart.svg" alt="">
-        </a>
+          <div class="header-container-more--cart--child">
+            <div class="header-container-more--cart--top">
+                <h6 class="header-container-more--cart--caption">GIỎ HÀNG</h6>
+                <img src="./img/shopping-cart.svg" alt="">
+                <span class="header-container-more--cart--alert">Hiện chưa có sản phẩm</span>
+            </div>
+            <div class="header-container-more--cart--bot">
+              <div class="header-container-more--cart--total">
+                <span class="header-container-more--cart--total--name">TỔNG TIỀN:</span>
+                <span class="header-container-more--cart--total--numb">0đ</span>
+              </div>
+              <div class="header-container-more--cart--btn">
+                <button class="header-container-more--cart--left"> XEM GIỎ HÀNG</button>
+                <button class="header-container-more--cart--right">THANH TOÁN</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
         </div>
       <div class="header-categories">
         <div class="header-categories-home header-categories-items">
-          <p>TRANG CHỦ</p>
+          <a href="index.html">TRANG CHỦ</a>
         </div>
         <div class="header-categories-deal header-categories-items">
           HOTDEAL
           <ul class="header-categories--menu">
-            <li>SẢN PHẨM KHUYẾN MÃI</li>
-            <li>SẢN PHẨM MỚI</li>
-            <li>SẢN PHẨM BÁN CHẠY</li>
+            <li><a href="#">SẢN PHẨM KHUYẾN MÃI</a></li>
+            <li><a href="#">SẢN PHẨM MỚI</a></li>
+            <li><a href="#">SẢN PHẨM BÁN CHẠY</a></li>
           </ul>
           <!-- <select name="" id="">
             <option value="">HOTDEAL</option>
@@ -75,26 +96,26 @@
           NAM
           <ul class="header-categories--menu">
             <li>
-              <a href="#">ÁO THUN NAM</a>
+              <a href="products.html">ÁO THUN NAM</a>
             </li>
             <li>
-              <a href="#">ÁO SƠ MI NAM</a>
+              <a href="products.html">ÁO SƠ MI NAM</a>
               </li>
-            <li>QUẦN SHORT NAM</li>
-            <li>QUẦN DÀI NAM</li>
-            <li>PHỤ KIỆN NAM</li>
+            <li><a href="products.html">QUẦN SHORT NAM</a></li>
+            <li><a href="products.html">QUẦN DÀI NAM</a></li>
+            <li><a href="products.html">PHỤ KIỆN NAM</a></li>
           </ul>
           <i class="fa-sharp fa-solid fa-chevron-down"></i>
         </div>
         <div class="header-categories-deal header-categories-items">
           NỮ
           <ul class="header-categories--menu">
-            <li>ÁO THUN NỮ</li>
-            <li>SƠ MI NỮ</li>
-            <li>ĐẦM - VÁY</li>
-            <li>QUẦN SHORT NỮ</li>
-            <li>QUẦN DÀI NỮ</li>
-            <li>PHỤ KIỆN NỮ</li>
+            <li><a href="products.html">ÁO THUN NỮ</a></li>
+            <li><a href="products.html">SƠ MI NỮ</a></li>
+            <li><a href="products.html">ĐẦM - VÁY</a></li>
+            <li><a href="products.html">QUẦN SHORT NỮ</a></li>
+            <li><a href="products.html">QUẦN DÀI NỮ</a></li>
+            <li><a href="products.html">PHỤ KIỆN NỮ</a></li>
           </ul>
           <i class="fa-sharp fa-solid fa-chevron-down"></i>
         </div>
@@ -102,22 +123,21 @@
         <div class="header-categories-deal header-categories-items">
           HỖ TRỢ
           <ul class="header-categories--menu header-categories--help">
-            <li class="header-categories--border">LIÊN HỆ</li>
-            <li class="header-categories--border">CHÍNH SÁCH</li>
-            <li class="header-categories--list">CHÍNH SÁCH MUA HÀNG</li>
-            <li class="header-categories--list">CHÍNH SÁCH ĐỔI TRẢ</li>
-            <li class="header-categories--list">CHÍNH SÁCH BẢO MẬT</li>
+            <li class="header-categories--border"><a href="#">LIÊN HỆ</a></li>
+            <li class="header-categories--border"><a href="#">CHÍNH SÁCH</a></li>
+            <li class="header-categories--list"><a href="#">CHÍNH SÁCH MUA HÀNG</a></li>
+            <li class="header-categories--list"><a href="#">CHÍNH SÁCH ĐỔI TRẢ</a></li>
+            <li class="header-categories--list"><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
           </ul>
           <i class="fa-sharp fa-solid fa-chevron-down"></i>
         </div>
       </div>
     </header>
-<body>
     <div class="overview">
         <div class="cricle cricle-hide">
             <a href="index.html">Trang chủ</a>
             <span>|</span>
-            <a>Đăng nhập</a>
+            <a href="signup.html">Đăng ký</a>
         </div>
         <form class="form">
             <div class="form_head">
@@ -168,8 +188,7 @@
     <script src="./js/main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-<div class="footer footer-signup">
+<div class="footer">
   <div class="footer-categories">
     <a href="">
       ÁO NAM
@@ -263,7 +282,7 @@
 </div>
   
   <div class="loading"></div>
-  <div class="wrapper">
+
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

@@ -8,9 +8,9 @@
         display: none;
     }
     @include tablet{
-        width: 1023px;
+        // width: 1023px;
         img{
-            width: 1023px;
+            // width: 1023px;
         }
     }
     @include mobile{
@@ -60,7 +60,7 @@
         }
         &-input{
             display: flex;
-            // justify-content: center;
+            justify-content: center;
             // flex-wrap: nowrap;
             // margin-right: 480px;
             @include mobile{
@@ -87,13 +87,16 @@
         &-text{
             background-color: #fff;
             border: none;
-            margin-left: 360px;
+            // margin-left: 360px;
             max-width: 590px;
             height: 46px;
             width: 100%;
             border-radius: 11px;
             // font-size: 16px;
             margin-right: 12px;
+            @include tablet{
+                max-width: 400px;
+            }
             &--input{
                 // padding-left: 32px;
                 // padding-top: 10px;
