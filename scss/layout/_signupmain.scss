@@ -15,7 +15,8 @@
 .cricle{
     // transform: translateY(163px);
     // margin-top: 160px;
-    transform: translateY(134px);
+    // transform: translateY(134px);
+    margin-top: 200px;
     margin-left: 20px;
     font-size: 12px;
     @include mobile{
@@ -60,10 +61,12 @@
 }
 .input{
     margin-bottom: 30px;
+    position: relative;
     h5{
         margin: 0;
     }
     &_title{
+        padding: 0 5px;
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
@@ -72,6 +75,11 @@
         align-items: center;
     
         color: #000000;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transform: translateY(-50%);
+        background: #fff;
         span{
             color: red;
         }
@@ -111,6 +119,12 @@
         }
     }
     &-bottom {
+        a{
+            display: inline-block;
+            width: 100%;
+            color: #F1F1F3;
+            font-size: 18px;
+        }
         max-width: 331px;
         width: 100%;
         background: #FF7A00;
@@ -124,6 +138,10 @@
         // margin-top: 20px;
         // margin-left: 24px;
         // text-align: center;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.9;
+        }
     }
     a{
         color: #63656A;

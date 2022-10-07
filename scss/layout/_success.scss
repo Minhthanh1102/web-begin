@@ -1,0 +1,192 @@
+.success{
+    // margin-top: 200px;
+    &-icon{
+        text-align: center;
+    }
+    &-text{
+        // max-width: 400px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        p{
+            max-width: 300px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    &-text2{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        p{
+            max-width: 330px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    &-btn{
+        margin-top: 100px;
+        margin-bottom: 400px;
+        text-align: center;
+    }
+}
+.forgot{
+    &-btn{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 550px;
+    }
+    &-text{
+        // display: flex;
+        align-items: center;
+        text-align: center;
+        p{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        h3{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+    }
+    &-form{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        max-width: 378px;
+        width: 100%;
+        span{
+            position: absolute;
+            left: 5px;
+            top: 0;
+            transform: translateY(-50%);
+            background-color: #fff;
+            padding:0 5px;
+        }
+        input{
+            max-width: 378px;
+            width: 100%;
+            height: 30px;
+            padding: 5px 10px;
+        }
+    }
+}
+.retype{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.otp{
+    &-input{
+        margin: 30px 0;
+        position: relative;
+        input{
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+        }
+        span{
+            position: absolute;
+            top: 0;
+            left: 10px;
+            background-color: #fff;
+            padding: 0 5px;
+            transform: translateY(-50%);
+        }
+    }
+    &-text2{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        span{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.3);
+        }
+    }
+    &-btn{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 480px;
+    }
+    &-text{
+        // display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        p{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        h3{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+    }
+    &-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}
+.digit{
+    &-group{
+            input {
+                width: 40px;
+                height: 40px;
+                // background-color: lighten($BaseBG, 5%);
+                line-height: 38px;
+                font-weight: 400px;
+                text-align: center;
+                font-size: 28px;
+                font-weight: 200;
+                color: rgb(0, 0, 0);
+                margin: 0 2px;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-radius: 8px;
+            } 
+    }
+}
+.rules{
+    // margin-top: 180px;
+    padding: 0 120px;
+    margin-bottom: 120px;
+    h1{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        // display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 60px 0;
+    }
+    &-text{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}

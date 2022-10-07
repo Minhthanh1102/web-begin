@@ -1951,7 +1951,7 @@ a {
 }
 
 .cricle {
-  transform: translateY(134px);
+  margin-top: 200px;
   margin-left: 20px;
   font-size: 12px;
 }
@@ -1994,11 +1994,13 @@ a {
 
 .input {
   margin-bottom: 30px;
+  position: relative;
 }
 .input h5 {
   margin: 0;
 }
 .input_title {
+  padding: 0 5px;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -2006,6 +2008,11 @@ a {
   display: flex;
   align-items: center;
   color: #000000;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-50%);
+  background: #fff;
 }
 .input_title span {
   color: red;
@@ -2049,6 +2056,16 @@ a {
   color: #F1F1F3;
   margin: 20px 23px;
   font-size: 18px;
+  cursor: pointer;
+}
+.checkbox-bottom a {
+  display: inline-block;
+  width: 100%;
+  color: #F1F1F3;
+  font-size: 18px;
+}
+.checkbox-bottom:hover {
+  opacity: 0.9;
 }
 .checkbox a {
   color: #63656A;
@@ -2273,6 +2290,299 @@ a {
   position: absolute;
   width: 10%;
   background-color: #F4B071;
+}
+
+.success-icon {
+  text-align: center;
+}
+.success-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.success-text p {
+  max-width: 300px;
+  font-size: 18px;
+  text-align: center;
+}
+.success-text2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.success-text2 p {
+  max-width: 330px;
+  font-size: 18px;
+  text-align: center;
+}
+.success-btn {
+  margin-top: 100px;
+  margin-bottom: 400px;
+  text-align: center;
+}
+
+.forgot-btn {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 550px;
+}
+.forgot-text {
+  align-items: center;
+  text-align: center;
+}
+.forgot-text p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.forgot-text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.forgot-form {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.forgot form {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  max-width: 378px;
+  width: 100%;
+}
+.forgot form span {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 5px;
+}
+.forgot form input {
+  max-width: 378px;
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.retype {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.otp-input {
+  margin: 30px 0;
+  position: relative;
+}
+.otp-input input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+}
+.otp-input span {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 5px;
+  transform: translateY(-50%);
+}
+.otp-text2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.otp-text2 span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+}
+.otp-btn {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 480px;
+}
+.otp-text {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.otp-text p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.otp-text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.otp-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.digit-group input {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  font-weight: 400px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+  margin: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.rules {
+  padding: 0 120px;
+  margin-bottom: 120px;
+}
+.rules h1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 60px 0;
+}
+.rules-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.rules-text h3 {
+  margin: 0;
+}
+.rules-text p {
+  margin: 0;
+}
+
+.introduce {
+  background-image: linear-gradient(white, rgb(249, 233, 226));
+}
+.introduce img {
+  width: 75%;
+}
+.introduce-feedback {
+  padding-bottom: 30px;
+}
+.introduce-feedback--all {
+  gap: 0 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.introduce-feedback-flex {
+  margin-bottom: 27px;
+}
+.introduce-feedback span {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+  text-decoration-line: underline;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.introduce-text {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+.introduce-text-gradient p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.025em;
+  color: #D56600;
+}
+.introduce-text-gradient-image {
+  display: flex;
+  justify-content: flex-end;
+}
+.introduce-text-all {
+  display: flex;
+  justify-content: space-between;
+}
+.introduce-text-all span {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 20px;
+  color: #D56600;
+}
+.introduce-text-first span {
+  text-align: right;
+  right: 0;
+  writing-mode: vertical-rl;
+  margin-right: 15px;
+}
+.introduce-text-second {
+  margin: 54px 0;
+}
+.introduce-text-second span {
+  text-align: right;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+}
+.introduce-text-third {
+  margin-bottom: 60px;
+}
+.introduce-text-third span {
+  text-align: right;
+  right: 0;
+  writing-mode: vertical-rl;
+  margin-right: 15px;
+}
+.introduce-text-new p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.055em;
+  color: #000000;
+  margin: 20px 0;
+}
+.introduce-text h3 {
+  font-size: 30px;
+  line-height: 45px;
+  margin: 0;
+  color: #D56600;
+  font-weight: 300;
+}
+.introduce-text h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 82px;
+  color: black;
+  -webkit-text-fill-color: rgb(249, 233, 226); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #A0530B;
+  margin: 0;
+}
+.introduce h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 76px;
+  color: #D56600;
+  margin: 0;
 }
 
 .combo {
