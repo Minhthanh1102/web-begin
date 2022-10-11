@@ -33,6 +33,9 @@
     }
 }
 .forgot{
+    @include mobile{
+        margin-top: 100px;
+    }
     &-btn{
         align-items: center;
         text-align: center;
