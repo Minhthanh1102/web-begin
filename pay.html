@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="link logo" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+<div class="wrapper">
+  <header class="header">
+    <div class="header-container">
+      <div class="header-container-menu">
+        <label for="nav-input" class="nav-menu">
+          <img src="img/menu.svg" alt="">
+        </label>
+        <input type="checkbox" hidden name="" id="nav-input">
+        <div class="headmenu">
+          <div class="headmenu-bar">
+              <img src="img/Group 427.svg" alt="">
+              <label for="nav-input">
+                <img src="img/icon/menu.svg" alt="">
+              </label>
+          </div>
+          <div class="headmenu-list">
+              <ul>
+                  <li>TRANG CHỦ</li>
+                  <li>HOT DEAL</li>
+                  <li>NAM
+                      <i class="fa-solid fa-chevron-down"></i>
+                  </li>
+                  <li>NỮ
+                      <i class="fa-solid fa-chevron-down"></i>
+                  </li>
+                  <li>CỬA HÀNG</li>
+                  <li>HỖ TRỢ
+                      <i class="fa-solid fa-chevron-down"></i>
+                  </li>
+                  <li>TÀI KHOẢN CỦA TÔI</li>
+                  <li>TRA CỨU ĐƠN HÀNG</li>
+              </ul>
+          </div>
+      </div>
+      </div>
+      <div class="header-container-logo">
+        <a href="index.html">
+          <img src="./img/Group 7.svg" alt="logo">
+        </a>
+        <p>Mua sắm vô cực</p>
+    </div>
+    <div class="header-container-search">
+      <input  class="header-container-search-input" type="text" placeholder="Sản phẩm tìm kiếm...">
+        <img src="./img/search.svg" alt="">
+    </div>
+    <div class="header-container-order">
+      <img src="./img/package.svg" alt="vector">
+      <span>Tra cứu đơn hàng</span>
+    </div>
+    <div class="header-container-more">
+      <div class="header-container-more--user" href="login.html">
+        <img src="./img/user-check.svg" alt="">
+        <ul class="header-container-more--login">
+          
+          <li>
+            <a href="login.html">ĐĂNG NHẬP</a>
+            </li>
+          <li>
+            <a href="signup.html">ĐĂNG KÝ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-container-more--cart" href="#">
+        <img src="./img/shopping-cart.svg" alt="">
+        <div class="header-container-more--cart--child">
+          <div class="header-container-more--cart--top">
+              <h6 class="header-container-more--cart--caption">GIỎ HÀNG</h6>
+              <img src="./img/shopping-cart.svg" alt="">
+              <span class="header-container-more--cart--alert">Hiện chưa có sản phẩm</span>
+          </div>
+          <div class="header-container-more--cart--bot">
+            <div class="header-container-more--cart--total">
+              <span class="header-container-more--cart--total--name">TỔNG TIỀN:</span>
+              <span class="header-container-more--cart--total--numb">0đ</span>
+            </div>
+            <div class="header-container-more--cart--btn">
+              <button class="header-container-more--cart--left"> XEM GIỎ HÀNG</button>
+              <button class="header-container-more--cart--right">THANH TOÁN</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      </div>
+    <div class="header-categories">
+      <div class="header-categories-home header-categories-items">
+        <a href="index.html">TRANG CHỦ</a>
+      </div>
+      <div class="header-categories-deal header-categories-items">
+        HOTDEAL
+        <ul class="header-categories--menu">
+          <li><a href="#">SẢN PHẨM KHUYẾN MÃI</a></li>
+          <li><a href="#">SẢN PHẨM MỚI</a></li>
+          <li><a href="#">SẢN PHẨM BÁN CHẠY</a></li>
+        </ul>
+        <!-- <select name="" id="">
+          <option value="">HOTDEAL</option>
+          <option value="">SẢN PHẨM KHUYẾN MÃI</option>
+          <option value="">SẢN PHẨM MỚI</option>
+          <option value="">SẢN PHẨM BÁN CHẠY</option>
+        </select> -->
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="header-categories-deal header-categories-items">
+        NAM
+        <ul class="header-categories--menu">
+          <li>
+            <a href="products.html">ÁO THUN NAM</a>
+          </li>
+          <li>
+            <a href="products.html">ÁO SƠ MI NAM</a>
+            </li>
+          <li><a href="products.html">QUẦN SHORT NAM</a></li>
+          <li><a href="products.html">QUẦN DÀI NAM</a></li>
+          <li><a href="products.html">PHỤ KIỆN NAM</a></li>
+        </ul>
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="header-categories-deal header-categories-items">
+        NỮ
+        <ul class="header-categories--menu">
+          <li><a href="products.html">ÁO THUN NỮ</a></li>
+          <li><a href="products.html">SƠ MI NỮ</a></li>
+          <li><a href="products.html">ĐẦM - VÁY</a></li>
+          <li><a href="products.html">QUẦN SHORT NỮ</a></li>
+          <li><a href="products.html">QUẦN DÀI NỮ</a></li>
+          <li><a href="products.html">PHỤ KIỆN NỮ</a></li>
+        </ul>
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+      <div class="header-categories-shop header-categories-items">CỬA HÀNG</div>
+      <div class="header-categories-deal header-categories-items">
+        HỖ TRỢ
+        <ul class="header-categories--menu header-categories--help">
+          <li class="header-categories--border"><a href="#">LIÊN HỆ</a></li>
+          <li class="header-categories--border"><a href="#">CHÍNH SÁCH</a></li>
+          <li class="header-categories--list"><a href="#">CHÍNH SÁCH MUA HÀNG</a></li>
+          <li class="header-categories--list"><a href="#">CHÍNH SÁCH ĐỔI TRẢ</a></li>
+          <li class="header-categories--list"><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+        </ul>
+        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
+  </header>
+  <div class="cricle">
+    <a href="index.html">Trang chủ</a>
+    <span>|</span>
+    <a href="products.html">Thanh toán</a>
+    <span>|</span>
+    <a href="products.html">Thông tin thanh toán</a>
+</div>
+  <div class="pay">
+    <form class="pay-form">
+        <h2>Thông tin liên hệ</h2>
+        <div class="pay-name pay-all">
+            <input type="text" name="" id="">
+            <span>Tên người nhận<a style="color: red;"> *</a></span>
+        </div>
+        <div class="pay-mail pay-all">
+            <input type="text" name="" id="">
+            <span>Email<a style="color: red;"> *</a></span>
+        </div>
+        <div class="pay-phone pay-all">
+            <input type="text" name="" id="">
+            <span>Điện thoại liên hệ<a style="color: red;"> *</a></span>
+        </div>
+        <div class="pay-check">
+            <input type="checkbox" name="" id="">
+            <span>Đăng ký nhận thông tin khuyến mãi</span>
+        </div>
+        <h2>Thông tin giao hàng</h2>
+        <div class="pay-ship pay-all">
+            <select name="" id="">
+                <option value=""></option>
+            </select>
+            <span>Chọn thành phố<a style="color: red;"> *</a></span>
+        </div>
+        <div class="pay-ship pay-all">
+            <select name="" id="">
+                <option value=""></option>
+            </select>
+            <span>Chọn quận/huyện<a style="color: red;"> *</a></span>
+        </div>
+            <div class="pay-ship pay-all">
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+                <span>Chọn phường/xã<a style="color: red;"> *</a></span>
+            </div>
+            <div class="pay-ship pay-all">
+                <select name="" id="">
+                    <option value=""></option>
+                </select>
+                <span>địa chỉ nhận hàng<a style="color: red;"> *</a></span>
+            </div>
+            <div class="pay-name pay-all">
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+                <span>Ghi chú</span>
+                <p>0/900 từ</p>
+            </div>
+            <div class="pay-other">
+                <span>Thông tin đơn hàng của bạn sẽ được lưu vào đăng kí tài khoản nhanh.</span>
+            </div>
+            <div class="pay-check">
+                <input type="checkbox" name="" id="">
+                <span>Xuất hóa đơn công ty</span>
+            </div>
+            <h2>Thông tin xuất hóa đơn</h2>
+            <div class="pay-bussiness pay-all">
+                <input type="text" name="" id="">
+                <span>Tên công ty<a style="color: red;"> *</a></span>
+            </div>
+            <div class=" pay-all">
+                <input type="text" name="" id="">
+                <span>Địa chỉ công ty<a style="color: red;"> *</a></span>
+            </div>
+            <div class="pay-number pay-all">
+                <input type="text" name="" id="">
+                <span>Mã số thuế<a style="color: red;"> *</a></span>
+            </div>
+            <div class="pay-final">
+                <h2>Hình thức thanh toán</h2>
+                <div class="pay-final-all">
+                    <input type="radio" checked="checked" value="1" name="pay">Thanh toán trực tiếp khi nhận hàng<br>
+                </div>
+                <div class="pay-final-all">
+                    <input type="radio" checked="checked" value="2" name="pay">Thanh toán bằng ví điện tử<br>
+                </div>
+                <div class="pay-final-img">
+                    <img src="img/icon/Group 208.svg" alt="">
+                    <img src="img/icon/MASTER.png" alt="">
+                </div>
+                <div class="pay-final-all">
+                    <input type="radio" checked="checked" value="3" name="pay">Thanh toán bằng thẻ nội địa<br>
+                </div>
+                <div class="pay-final-all">
+                    <input type="radio" checked="checked" value="4" name="pay">Thanh toán bằng thẻ visa/mastercard<br>
+                </div>
+            </div>
+            <div class="pay-promo">
+                <div class="pay-promo-input">
+                    <input type="text" name="" id="">
+                    <span>Mã khuyến mãi</span>
+                    <button>Áp dụng</button>
+                </div>
+                <div class="pay-promo-name">
+                    <label for="discount-input" class="pay-promo-name-flex">    
+                        <img src="img/icon/Group 285.svg" alt="">
+                        <a>Bạn có <p> 9 ưu đãi siêu hấp dẫn </p> đang chờ sử dụng</a>
+                    </label>
+                    <input type="checkbox" hidden  name="" id="discount-input">
+                    <div class="discount">
+                        <div class="discount-head">
+                          <label for="discount-input" class="discount-menu">
+                            <img src="img/icon/arrow-left.svg" alt="">
+                          </label>
+                          <input type="checkbox" hidden name="" id="discount-input">
+                          <div class="discount-logo">
+                            <a href="index.html">
+                              <img src="./img/Group 7.svg" alt="logo">
+                            </a>
+                            <p>Mua sắm vô cực</p>
+                        </div>
+                        </div>
+                        <form class="form-discount">
+                          <h1>MÃ ƯU ĐÃI THÁNG 06-2022</h1>
+                          <div class="discount-input">
+                            <input type="text" name="" id="" placeholder="Nhập mã giảm giá ở đây">
+                            <button>
+                              Áp dụng
+                            </button>
+                          </div>
+                          <div class="discount-list">
+                              
+                              <div class="discount-flex">
+                                <div class="discount-promo">
+                                  <div class="discount-promo-img">
+                                    <img class="discount-promo-img1" src="img/icon/Group 275.svg" alt="">
+                                    <img class="discount-promo-img2" src="img/icon/Logo.svg" alt="">
+                                  </div>
+                                  <span>DEAL30_100K</span>
+                                </div>
+                                <div class="discount-text">
+                                  <span>Mã ưu đãi 30K cho hóa đơn từ 100K</span>
+                                  <p>Áp dụng cho dòng sản phẩm mới</p>
+                                </div>
+                                <div class="discount-btn">
+                                  <button>Áp dụng</button>
+                                </div>
+                              </div>
+                              <div class="discount-flex">
+                                <div class="discount-promo">
+                                  <div class="discount-promo-img">
+                                    <img class="discount-promo-img1" src="img/icon/Group 275.svg" alt="">
+                                    <img class="discount-promo-img2" src="img/icon/Logo.svg" alt="">
+                                  </div>
+                                  <span>DEAL90_900K</span>
+                                </div>
+                                <div class="discount-text">
+                                  <span>Mã ưu đãi 90K cho hóa đơn từ 900K</span>
+                                  <p>Áp dụng cho dòng sản phẩm áo</p>
+                                </div>
+                                <div class="discount-btn">
+                                  <button>Áp dụng</button>
+                                </div>
+                              </div>
+                              <div class="discount-flex">
+                                <div class="discount-promo">
+                                  <div class="discount-promo-img">
+                                    <img class="discount-promo-img1" src="img/icon/Group 275.svg" alt="">
+                                    <img class="discount-promo-img2" src="img/icon/Logo.svg" alt="">
+                                  </div>
+                                  <span>DEAL100_1TR</span>
+                                </div>
+                                <div class="discount-text">
+                                  <span>Mã ưu đãi 100K cho hóa đơn từ 1TRIỆU</span>
+                                  <p>Áp dụng cho dòng sản phẩm mới</p>
+                                </div>
+                                <div class="discount-btn">
+                                  <button>Áp dụng</button>
+                                </div>
+                              </div>
+                              <div class="discount-flex">
+                                <div class="discount-promo">
+                                  <div class="discount-promo-img">
+                                    <img class="discount-promo-img1" src="img/icon/Group 275.svg" alt="">
+                                    <img class="discount-promo-img2" src="img/icon/Logo.svg" alt="">
+                                  </div>
+                                  <span>FREESHIP15</span>
+                                </div>
+                                <div class="discount-text">
+                                  <span>Mã ưu đãi 15K vận chuyển cho khách mới</span>
+                                  <p>Áp dụng cho dòng sản phẩm mới</p>
+                                </div>
+                                <div class="discount-grey ">
+                                  <button>Áp dụng</button>
+                                </div>
+                              </div>
+                              <div class="discount-flex">
+                                <div class="discount-promo">
+                                  <div class="discount-promo-img">
+                                    <img class="discount-promo-img1" src="img/icon/Group 275.svg" alt="">
+                                    <img class="discount-promo-img2" src="img/icon/Logo.svg" alt="">
+                                  </div>
+                                  <span>FREESHIP15</span>
+                                </div>
+                                <div class="discount-text">
+                                  <span>Mã ưu đãi 15K vận chuyển cho khách mới</span>
+                                  <p>Áp dụng cho dòng sản phẩm mới</p>
+                                </div>
+                                <div class="discount-grey ">
+                                  <button>Áp dụng</button>
+                                </div>
+                              </div>
+                              <div class="discount-flex">
+                                <div class="discount-promo">
+                                  <div class="discount-promo-img">
+                                    <img class="discount-promo-img1" src="img/icon/Group 275.svg" alt="">
+                                    <img class="discount-promo-img2" src="img/icon/Logo.svg" alt="">
+                                  </div>
+                                  <span>FREESHIP15</span>
+                                </div>
+                                <div class="discount-text">
+                                  <span>Mã ưu đãi 15K vận chuyển cho khách mới</span>
+                                  <p>Áp dụng cho dòng sản phẩm mới</p>
+                                </div>
+                                <div class="discount-grey">
+                                  <button>Áp dụng</button>
+                                </div>
+                              </div>
+                          </div>
+                        </form>
+                      </div>
+                    <div class="pay-promo-name-button">
+                        <button><i class="fa-regular fa-plus"></i></button>
+                    </div>
+                </div>
+                <label for="discount-input-bag" class="pay-promo-bag">
+                    <img src="img/icon/shopping-bag.svg" alt="">
+                    <a>Kiểm tra đơn hàng bạn ơi!</a>
+                </label>
+                <input type="checkbox" hidden  name="" id="discount-input-bag">
+                <label for="discount-input-bag" class="overlay">
+                </label>
+                <div class="pay-hide">
+                    <div class="pay-cart">
+                      <div class="pay-cart-img">
+                        <img src="img/icon/Rectangle 95.png" alt="">
+                      </div>
+                      <div class="pay-cart-infor">
+                        <h2>Áo sơ mi nam xám xanh vằn</h2>
+                        <span>MSP: 0019680</span>
+                        <div class="pay-cart-infor-flex">
+                          <div class="pay-cart-infor-flex1">
+                            <img src="img/icon/Group 66.svg" alt="">
+                            <span>Màu xám xanh - M</span>
+                          </div>
+                          <div class="pay-cart-infor-flex2">
+                            <span>Số lượng: 1</span>
+                          </div>
+                        </div>
+                        <div class="pay-cart-infor-price">
+                          <span>230.000 đ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pay-cart">
+                      <div class="pay-cart-img">
+                        <img src="img/icon/Rectangle 4.png" alt="">
+                      </div>
+                      <div class="pay-cart-infor">
+                        <h2>Quần dài kaki nam màu đen</h2>
+                        <span>MSP: 0019680</span>
+                        <div class="pay-cart-infor-flex">
+                          <div class="pay-cart-infor-flex1">
+                            <img src="img/Group 66.svg" alt="">
+                            <span>Màu đen - XL</span>
+                          </div>
+                          <div class="pay-cart-infor-flex2">
+                            <span>Số lượng: 1</span>
+                          </div>
+                        </div>
+                        <div class="pay-cart-infor-price">
+                          <span>580.000 đ</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pay-box">
+                      <div class="pay-box-name">
+                          <ul >
+                              <li>Tạm tính</li>
+                              <li>Phí vận chuyển</li>
+                              <li>Giảm giá mã KM</li>
+                              <li>Tổng phụ</li>
+                          </ul>
+                          <ul class="pay-box-price">
+                              <li>810.000 đ</li>
+                              <li>35.000 đ</li>
+                              <li>-35.000 đ</li>
+                              <li>810.000 đ</li>
+                          </ul>
+                      </div>
+
+                      <div class="pay-box-btn">
+                          <button>TIẾN HÀNH THANH TOÁN</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+        <div class="pay-box">
+            <div class="pay-box-name">
+                <ul >
+                    <li>Tạm tính</li>
+                    <li>Phí vận chuyển</li>
+                    <li>Giảm giá mã KM</li>
+                    <li>Tổng phụ</li>
+                </ul>
+                <ul class="pay-box-price">
+                    <li>810.000 đ</li>
+                    <li>35.000 đ</li>
+                    <li>-35.000 đ</li>
+                    <li>810.000 đ</li>
+                </ul>
+            </div>
+            <div class="pay-box-btn">
+                <a href="check.html">
+                    <button>TIẾN HÀNH THANH TOÁN</button>
+                </a>
+            </div>
+        </div>
+  </div>
+
+
+<div class="loading"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
