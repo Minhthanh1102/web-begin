@@ -2687,7 +2687,7 @@ a {
   justify-content: space-between;
 }
 .pay-cart-infor h2 {
-  font-size: 20px;
+  font-size: 4vmin;
   margin: 0;
 }
 .pay-cart-infor span {
@@ -2714,7 +2714,7 @@ a {
 }
 .pay-cart-infor-flex span {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 3vmin;
   line-height: 14px;
   display: flex;
   align-items: center;
@@ -2799,7 +2799,6 @@ a {
 .pay-form h2 {
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
   line-height: 29px;
 }
 .pay-promo-bag {
@@ -3125,6 +3124,33 @@ a {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
   display: none;
+}
+
+.full-infor {
+  padding: 0 25px;
+}
+.full-infor-left {
+  color: #FF7A00;
+}
+.full-infor-right {
+  color: #626262;
+}
+.full-infor-top {
+  position: absolute;
+  top: 0;
+  right: 23px;
+}
+.full-infor-top span {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  margin-left: 5px;
+}
+.full-infor-box {
+  position: relative;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
+  padding: 15px 20px;
+  margin-bottom: 30px;
 }
 
 #discount-input:checked ~ .discount {
