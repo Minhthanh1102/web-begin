@@ -173,7 +173,7 @@
         h2{
             font-style: normal;
             font-weight: 300;
-            // font-size: 25px;
+            font-size: 25px;
             line-height: 29px;
         }
     }
@@ -369,6 +369,9 @@
     top: 0;
     left: 0;
     background-color: #fff;
+    &-height{
+        height: 70px;
+    }
     &-list{
         height: 500px;
         overflow-y: scroll;
@@ -515,6 +518,30 @@
 .full{
     &-infor{
         padding: 0 25px;
+        &-user{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            &:hover{
+                // color: yellow;
+            }
+            span{
+                margin-left: 5px;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+        &-check{
+            display: flex;
+            align-items: center;
+        }
+        h2{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 29px;
+        }
         &-left{
             color: #FF7A00;
         }
@@ -535,12 +562,59 @@
         &-box{
             position: relative;
             box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25);
-            padding: 15px 20px;
+            padding: 20px 20px 15px 20px;
             margin-bottom: 30px;
+            font-size: 12px;
+        }
+        &-box2{
+            font-size: 14px;
+            padding: 30px 20px 20px 20px;
         }
     }
 }
+.pay2{
+    height: 600px;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+}
+.information{
+    position: fixed;
+    padding: 0 25px;
+    transform: translateX(-160%);
+    transition: transform linear 0.2s,opacity linear 0.2s;
+    top: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    &-btn{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        button{
+            background: #9F9D9D;
+            border-radius: 3px;
+            border: none;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            height: 30px;
+            max-width: 113px;
+            width: 100%;
+        }
+    }
+    &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 #discount-input:checked ~ .discount{
+    transform: translateX(0);
+    display: block;
+}
+#adduser:checked ~ .information{
     transform: translateX(0);
     display: block;
 }

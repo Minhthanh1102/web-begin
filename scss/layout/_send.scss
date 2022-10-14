@@ -1,0 +1,118 @@
+.send{
+    width: 100%;
+    position: relative;
+    position: fixed;
+    padding: 60px 10px 30px 10px;
+    background-image: linear-gradient(white, rgb(255, 227, 215));
+    transform: translateX(-150%);
+    transition: transform linear 0.2s, opacity linear 0.2s;
+    z-index: 1;
+    top: 0;
+    h1{
+        margin: 0;
+        font-size: 25;
+        text-align: center;
+        font-weight: 200;
+    }
+    &-btn{
+        text-align: center;
+        margin-top: 15px;
+        button{
+            background: #000000;
+            border-radius: 3px;
+            max-width: 280px;
+            width: 100%;
+            color: #fff;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            padding: 9px 0;
+            border: none;
+            outline: none;
+        }
+    }
+    &-message{
+        margin-top: 25px;
+        margin-bottom: 38px;
+        font-weight: 300;
+        font-size: 3vmin;
+        line-height: 14px;
+        color: #D56600;
+        text-align: center
+    }
+    &-img{
+        img{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+    }
+    &-input{
+        &-other{
+            span{
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            textarea{
+                width: 100%;
+                padding-left: 10px;
+            }
+        }
+        &-all{
+            position: relative;
+            margin-top: 28px;
+            input{
+                width: 100%;
+                height: 30px;
+                border: 0.3px solid #000000;
+                padding-left: 10px;
+            }
+            label{
+                position: absolute;
+                top: 0;
+                left: 10px;
+                transform: translateY(-50%);
+                max-width: 60px;
+                width: 100%;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+            }
+            p{
+                position: absolute;
+                top: 0;
+                left: 10px;
+                background-color: #fff;
+                max-width: 60px;
+                width: 100%;
+                height: 7px;
+                margin: 0;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+.box-size{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+#help-send:checked ~ .send{
+    transform: translateX(0);
+    display: block;
+}
+#help-send:checked ~ .box-size{
+    display: block;
+}
