@@ -1,13 +1,14 @@
 .send{
-    width: 100%;
+    width: 90%;
     position: relative;
     position: fixed;
     padding: 60px 10px 30px 10px;
     background-image: linear-gradient(white, rgb(255, 227, 215));
-    transform: translateX(-150%);
+    transform: translateX(-170%);
     transition: transform linear 0.2s, opacity linear 0.2s;
     z-index: 1;
-    top: 0;
+    top: 50%;
+    left: 50%;
     h1{
         margin: 0;
         font-size: 25;
@@ -110,7 +111,7 @@
     display: none;
 }
 #help-send:checked ~ .send{
-    transform: translateX(0);
+    transform: translate(-50%, -50%);
     display: block;
 }
 #help-send:checked ~ .box-size{

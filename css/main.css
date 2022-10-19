@@ -4520,15 +4520,16 @@ a {
 }
 
 .send {
-  width: 100%;
+  width: 90%;
   position: relative;
   position: fixed;
   padding: 60px 10px 30px 10px;
   background-image: linear-gradient(white, rgb(255, 227, 215));
-  transform: translateX(-150%);
+  transform: translateX(-170%);
   transition: transform linear 0.2s, opacity linear 0.2s;
   z-index: 1;
-  top: 0;
+  top: 50%;
+  left: 50%;
 }
 .send h1 {
   margin: 0;
@@ -4627,7 +4628,7 @@ a {
 }
 
 #help-send:checked ~ .send {
-  transform: translateX(0);
+  transform: translate(-50%, -50%);
   display: block;
 }
 
@@ -4636,13 +4637,111 @@ a {
 }
 
 .account {
-  padding: 0 20px 100px 20px;
+  padding: 0 20px 20px 20px;
   margin-top: 80px;
+}
+.account-box {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 0 12px;
+  margin-top: 10px;
+}
+.account-box-btn {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.account-box-btn button {
+  background: #FF7A00;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 4vmin;
+  line-height: 19px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+}
+.account-box-bot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.account-box-bot-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.account-box-bot-right p {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 4vmin;
+  line-height: 16px;
+}
+.account-box-bot-right span {
+  font-weight: 600;
+  font-size: 4vmin;
+  line-height: 19px;
+  text-align: right;
+  color: #FF7A00;
+}
+.account-box-bot-text {
+  display: flex;
+}
+.account-box-bot-text img {
+  margin-right: 10px;
+}
+.account-box-bot-text span {
+  font-weight: 400;
+  font-size: 4vmin;
+  line-height: 19px;
+  max-width: 105px;
+}
+.account-box-top {
+  display: flex;
+  justify-content: space-between;
+}
+.account-box-top-left {
+  font-weight: bold;
+}
+.account-box-top-left p {
+  font-weight: 300;
+  font-size: 3.3vmin;
+  line-height: 16px;
+  margin: 5px 0;
+}
+.account-box-top-left span {
+  font-weight: bold;
+}
+.account-box-top-right {
+  align-items: flex-end;
+  display: flex;
+  /* text-align: left; */
+  flex-direction: column;
+}
+.account-box-top-right p {
+  font-weight: 700;
+  font-size: 3.3vmin;
+  line-height: 16px;
+  margin: 5px 0;
+  color: #FF7A00;
+}
+.account-box-top-right span {
+  font-weight: 700;
+  font-size: 3vmin;
+  line-height: 16px;
+}
+.account h3 {
+  font-weight: 400;
+  font-size: 4vmin;
+  line-height: 16px;
 }
 .account-flex {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  gap: 0 10px;
 }
 .account-circle {
   border-radius: 50%;
@@ -4689,9 +4788,16 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.account-head-icon-one {
+  border-bottom: 1px solid #333333;
+}
 .account-head-icon-box {
+  align-items: center;
   display: flex;
   flex-direction: column;
+}
+.account-head-icon-box span {
+  font-size: 2.8vmin;
 }
 .account-head-border {
   border: 0.5px solid rgba(0, 0, 0, 0.2);
@@ -4725,12 +4831,169 @@ a {
   width: 100%;
 }
 
-.shape {
-  background: rgba(190, 191, 223, 0.54);
-  box-shadow: 18px 4px 33px rgba(0, 0, 0, 0.33);
-  backdrop-filter: blur(18.5px);
-  /* Note: backdrop-filter has minimal browser support */
-  transform: rotate(-90.11deg);
+.person {
+  padding: 0 20px;
+  padding-bottom: 100px;
+}
+.person-address {
+  position: relative;
+}
+.person-address select {
+  width: 100%;
+  height: 30px;
+}
+.person-address span {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 10px;
+  padding: 0 5px;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 3.7vmin;
+  line-height: 14px;
+}
+.person-all {
+  position: relative;
+  margin-top: 25px;
+}
+.person-all input {
+  width: 100%;
+  padding: 0 10px;
+  height: 30px;
+}
+.person-all span {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: #fff;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  font-weight: 300;
+  font-size: 3.7vmin;
+  line-height: 14px;
+}
+.person-text2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.person-text2 p {
+  font-weight: 600;
+  font-size: 4vmin;
+  line-height: 16px;
+  margin: 0;
+}
+.person-text2 label {
+  font-weight: 300;
+  font-size: 4vmin;
+  line-height: 16px;
+  text-align: right;
+  text-decoration-line: underline;
+}
+.person-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.person-text p {
+  font-weight: 600;
+  font-size: 4vmin;
+  line-height: 16px;
+  margin: 0;
+}
+.person-text label {
+  font-weight: 300;
+  font-size: 4vmin;
+  line-height: 16px;
+  text-align: right;
+  text-decoration-line: underline;
+}
+
+.camera {
+  background-color: #FF7A00;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 80px;
+}
+
+.update {
+  position: fixed;
+  padding: 0 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transform: translateX(-170%);
+  transition: transform linear 0.2s, opacity linear 0.2s;
+  z-index: 1;
+  left: 50%;
+  width: 90%;
+  margin: 0 auto;
+}
+.update h2 {
+  font-weight: 600;
+  font-size: 4.8vmin;
+  line-height: 21px;
+  text-align: center;
+}
+.update-all {
+  position: relative;
+  margin-top: 25px;
+}
+.update-all input {
+  width: 100%;
+  padding: 0 10px;
+  height: 30px;
+}
+.update-all span {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 5px;
+  font-weight: 300;
+  font-size: 3vmin;
+  line-height: 14px;
+}
+.update-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 10px;
+}
+.update-btn button {
+  background: #FF7A00;
+  border-radius: 5px;
+  max-width: 130px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.shadow {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+#update-mobile:checked ~ .update {
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+#update-mobile:checked ~ .shadow {
+  display: block;
 }
 
 .footer-images {
