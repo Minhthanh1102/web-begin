@@ -356,3 +356,74 @@
 #update-mobile:checked ~ .shadow{
     display: block;
 }
+.voucher{
+    padding: 0 20px;
+    &-flex{
+        position: absolute;
+        top: 0;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        &-mid{
+            flex: 4;
+            display: flex;
+            justify-content: space-between;
+            &-first{
+                max-width: 180px;
+                width: 100%;
+                flex: 3;
+                padding: 10px 0;
+                span{
+                    font-weight: 400;
+                    font-size: 2.8vmin;
+                    line-height: 15px;
+                    color: #9E9E9E;
+                    }
+            }
+            &-second{
+                flex: 2;
+                width: 100%;
+                font-weight: 700;
+                font-size: 2.8vmin;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: #8A8A8A;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 12px;
+                &-margin{
+                    margin-right: 10px;
+                }
+            }
+            a{
+                color: #FFAE63; 
+                font-weight: 700;
+                font-size: 15vmin;
+                margin: 0;
+                text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+            }
+        }
+        &-left{
+            margin: 0 auto;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+            span{
+                font-weight: 400;
+                font-size: 6vmin;
+                line-height: 29px;
+                color: #fff;
+                writing-mode: vertical-rl;
+                transform: rotate(-180deg);
+                margin-right: 5px;
+            }
+        }
+    }
+    &-list{
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+}
