@@ -1,0 +1,100 @@
+.account{
+    padding: 0 20px 100px 20px;
+    margin-top: 80px;
+
+    &-flex{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &-circle{
+        border-radius: 50%;
+        background-color: #FF7A00;
+        max-width: 70px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0;
+        span{
+            text-align: center;
+            font-size: 2.2vmin;
+            line-height: 12px;
+            color: #fff;
+        }
+        p{
+            font-weight: 700;
+            font-size: 4vmin;
+            line-height: 19px;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+        }
+    }
+    &-list{
+        &-all{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            position: relative;
+            span{
+                position: absolute;
+                left: 10%;
+                font-weight: 400;
+                font-size: 3vmin;
+                line-height: 16px;
+            }
+        }
+    }
+    &-head{
+        display: flex;
+        position: relative;
+        &-icon{
+            display: flex;
+            justify-content: space-between;
+            &-box{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-border{
+            border: 0.5px solid rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            margin-bottom: 3px;
+            p{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 4vmin;
+                line-height: 19px;
+                padding: 0;
+                margin: 0;
+            }
+            span{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3vmin;
+                line-height: 16px;
+                margin-top: 5px;
+            }
+        }
+        &-avt{
+            margin-right: 20px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.shape{
+    background: rgba(190, 191, 223, 0.54);
+    box-shadow: 18px 4px 33px rgba(0, 0, 0, 0.33);
+    backdrop-filter: blur(18.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    transform: rotate(-90.11deg);
+    }
