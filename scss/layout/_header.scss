@@ -14,6 +14,7 @@
     z-index: 1;
     padding: 20px 0;
     // left: 0;
+    transition: 0.3s ease;  
     @include sm-desk{
         max-width: 1366px;
         width: 100%;
@@ -170,6 +171,7 @@
                 display: none;
                 top: 100%;
                 margin: 0;
+                z-index: 1;
                 &--child{
                     list-style: none;
 
@@ -438,14 +440,12 @@
     }
 }
 .contact{
-    // position: absolute;
-    // position: fixed;
-    // position: relative;
-    // display: flex;
-    // transform: translateY(50%);
-    // position: fixed;
-    // z-index: inherit;
-    // top: 0;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
     &-box{
         transform: translateY(-50%);
         display: flex;

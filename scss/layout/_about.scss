@@ -188,6 +188,7 @@
         flex-wrap: wrap;
         margin: 0;
         flex-direction: column;
+        padding: 0 20px;
     }
     &-main{
         margin-right: 24px;
@@ -197,9 +198,7 @@
         img{
             width: 100%;
             @include mobile{
-                width: 390px;
-                height: 390px;
-                margin-left: 5px;
+                    margin-left: 5px;
             }
         }
     }
@@ -431,7 +430,7 @@
                     @include mobile{
                         font-style: normal;
                         font-weight: 300 !important;
-                        font-size: 14px !important;
+                        font-size: 4vmin !important;
                         line-height: 16px !important;
                     }
                 }
@@ -600,7 +599,7 @@
                     font-size: 18px;
                 }
                 @include mobile{
-                    font-size: 18px;
+                    font-size: 4vmin;
                     font-weight: bold;
                 }
             }
@@ -635,12 +634,14 @@
     }
     &-item{
         @include mobile{
+            display: flex;
             order: 2;
             flex-direction: row;
             flex-wrap: nowrap;
             margin-left: 5px;
             margin-top: 25px;
             max-height: 80px !important;
+
         }
         &-hide{
             display: none;
@@ -662,10 +663,9 @@
             margin-bottom: 20px;
             width: 100%;
             @include mobile{
-                height: 62px;
-                width: 62px;
                 margin-right: 20px;
                 margin-bottom: 0;
+                width: 20%;
             }
         }
     }
@@ -931,7 +931,6 @@
         margin-top: 0;
     }
     .about-infor--size--help{
-        margin-left: 100px;
     }
     .about-infor-now{
         margin-left: 17px;

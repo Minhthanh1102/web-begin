@@ -1,13 +1,22 @@
+.contact-mobile{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+    @include mobile{
+        display: block;
+    }
+}
 .messenger{
     position: fixed;
-    width: 80%;
+    width: 100%;
     padding: 10px 20px;
     background-color: #fff;
-    transform: translateX(-160%);
+    transform: translateY(160%);
     transition: transform linear 0.2s,opacity linear 0.2s;
     z-index: 1;
     right: 0;
-    bottom: 10%;
+    bottom: 0;
     &-bot{
         text-align: center;
         span{
@@ -42,6 +51,9 @@
             font-size: 5vmin;
             line-height: 24px;
             margin: 0;
+            @include tablet{
+                margin-bottom: 15px;
+            }
         }
         span{
             font-weight: 300;
@@ -61,5 +73,5 @@
     bottom: 10%;
 }
 #messenger-mobile:checked ~ .messenger{
-    transform: translateX(0);
+    transform: translateY(0);
 }

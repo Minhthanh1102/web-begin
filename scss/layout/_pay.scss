@@ -9,10 +9,10 @@
             line-height: 29px;
         }
         span{
-            font-size: 14px;
+            font-size: 3.3vmin;
         }
         p{
-            font-size: 14px;
+            font-size: 3.3vmin;
         }
         &-flex{
             font-weight: bold;
@@ -23,10 +23,10 @@
     &-address{
         padding: 0 25px;
         span{
-            font-size: 14px;
+            font-size: 3.3vmin;
         }
         p{
-            font-size: 14px;
+            font-size: 3.3vmin;
         }
         &-flex{
             font-weight: bold;
@@ -106,14 +106,21 @@
     &-box{
         margin: 0 auto;
         margin-top: 30px;
-        padding: 0 20px;
+        padding: 5px 20px;
         box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(0, 0, 0, 0.25);
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
+        @include tablet{
+            padding: 5px 60px;
+        }
         &-price{
             margin-right: 25px;
+            margin-left: 10px;
             text-align: right;
+            @include tablet{
+                margin-left: 20px;
+            }
             li{
                 &:last-child{
                     color: #FF7A00;
@@ -123,7 +130,7 @@
             }
         }
         &-btn{
-            flex:1;
+            width: 40%;
             button{
                 display: inline-block;
                 position: relative;
@@ -133,7 +140,6 @@
                 background: #FF7A00;
                 border-radius: 5px;
                 height: 35px;
-                max-width: 198px;
                 width: 100%;
                 border: none;
                 outline: none;
@@ -141,24 +147,30 @@
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
                 color: #FFFFFF;
+                @include tablet{
+                    height: 50px;
+                }
             }
         }
         &-name{
-            flex:1;
             display: flex;
             justify-content: space-between;
-            width: 100%;
             ul{
                 list-style: none;
                 padding: 0;
                 
                 li{
-                    font-size: 13px;
+                    font-size: 3.5vmin;
                     margin-bottom: 5px;
+                    @include tablet{
+                        font-size: 2.5vmin;
+                    }
                     &:last-child{
                         font-weight: bold;
-                        font-size: 12px;
-                        line-height: 14px;
+                        font-size: 3.3vmin;
+                        @include tablet{
+                            font-size: 2.5vmin;
+                        }
                     }
                 }
             }
@@ -167,6 +179,9 @@
     &-form{
         width: 100%;
         padding: 0 25px;
+        @include tablet{
+            padding: 0 60px;
+        }
         input{
             padding-left: 10px;
         }

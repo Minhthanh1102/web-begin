@@ -22,32 +22,14 @@
         @include sm-desk{
             height: 550px;
         }
-        @include sm-desk{
+        @include tablet{
             height: 350px;
         }
-        // @include sm-desk{
-        //     display: flex;
-        //     justify-content: center;
-        //     height: auto;
-        //     .categories-select-all{
-        //         margin-left: 0;
-        //         width: 200px;
-        //         margin-left: 30px;
-        //     }            
-        // }
         @include mobile{
             margin: 0 20px;
-            height: 200px;
+            height: auto;
             justify-content: space-between;
         }
-
-        // flex-wrap: nowrap;
-        // justify-content: flex-start;
-        // padding: 30px 120px;
-        // justify-content: center;
-        // align-items: center;
-        // margin-left: 30px;
-        // gap: 24px;
         &--img{
             img{
                 position: absolute;
@@ -56,11 +38,6 @@
         
         &-all{
             width:384px;
-            // position: relative;
-            // max-width: 662px;
-            // width: 100%;
-            // max-height: 384px;
-            // height: 100%;
             @include mobile{
                 // width: auto;
             }
@@ -131,9 +108,9 @@
                 }
                 @include mobile{
                     font-size: 8px;
-                    margin-top: 166px;
+                    margin: 0;
+                    bottom: 20%;
                     opacity: unset;
-                    bottom: unset;
                 }
                 // transform: translateY(50px);
                 // margin-bottom: 30px;
@@ -173,6 +150,9 @@
                 @include sm-desk{
                     margin-top: 460px;
                 }
+                @include mobile{
+                    margin: 0;
+                }
                 p{
                     margin: 0;
                     @include tablet{
@@ -193,9 +173,8 @@
                 }
                 @include mobile{
                     font-size: 8px;
-                    margin-top: 166px;
+                    bottom: 20%;
                     opacity: unset;
-                    bottom: unset;
                 }
             }
         }
@@ -281,9 +260,15 @@
                 }
                 @include mobile{
                     font-size: 8px;
-                    margin-top: 166px;
+                    margin: 0;
+                    bottom: 20%;
                 }
             }
         }
+    }
+}
+.categories-select-all--fix{
+    @include mobile{
+        position: unset !important;
     }
 }

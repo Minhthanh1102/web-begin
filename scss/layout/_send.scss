@@ -33,13 +33,18 @@
         }
     }
     &-message{
+        display: flex;
+        flex-direction: column;
         margin-top: 25px;
         margin-bottom: 38px;
         font-weight: 300;
         font-size: 3vmin;
         line-height: 14px;
         color: #D56600;
-        text-align: center
+        text-align: center;
+        span{
+            margin-bottom: 5px;
+        }
     }
     &-img{
         img{

@@ -1,17 +1,34 @@
 .help{
     padding: 0 20px;
     &-contact{
+        &-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;
+            padding-right: 10px;
+        }
         h2{
             margin: 0;
-            margin-top: 60px;
         }
     }
     &-border{
         border: 0.5px solid #000000;
         transform: matrix(1, 0, 0, 1, 0, 0);
+        margin-top: 5px;
     }
     &-policy{
         margin-top: 50px;
+        margin-bottom: 50px;
+        &-list{
+            display: none;
+        }
+        &-head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 10px;
+        }
         h2{
             margin: 0;
         }
@@ -19,7 +36,7 @@
             margin-top: 20px;
             padding-left: 35px;
             li{
-                font-size: 18px;
+                font-size: 4.3vmin;
                 line-height: 21px;
                 margin-bottom: 15px;
             }
@@ -27,9 +44,10 @@
     }
     &-list{
     text-align: center;
+    display: none;
     h3{
         font-style: normal;
-        font-size: 12px;
+        font-size: 3vmin;
         line-height: 14px;
     }   
         &-phone{
@@ -41,6 +59,9 @@
                 line-height: 14px;
                 text-align: center;
                 text-decoration-line: underline;
+            }
+            span{
+                font-size: 2.5vmin;
             }
         }
         &-home{
@@ -67,22 +88,25 @@
             }
             p{
                 font-weight: bold;
-                font-size: 10px;
+                font-size: 2.5vmin;
                 line-height: 12px;
                 margin: 0;
                 margin-bottom: 10px;
+            }
+            span{
+                font-size: 2.5vmin;
             }
         }
         &-time{
             margin-top: 15px;
             p{
                 font-weight: bold;
-                font-size: 12px;
+                font-size: 3vmin;
                 line-height: 14px;
             }
             span{
                 font-weight: 300;
-                font-size: 10px;
+                font-size: 2.5vmin;
                 line-height: 12px;
             }
         }
@@ -94,6 +118,9 @@
         padding: 7px 5px;
         margin: auto;
         margin-top: 10px;
+        @include tablet{
+            max-width: 140px;
+        }
         span{
             font-weight: bold;
             font-size: 2.8vmin;
@@ -103,12 +130,12 @@
         &-text{
         p{
             font-weight: 300;
-            font-size: 14px;
+            font-size: 3.3vmin;
             line-height: 16px;
         }
         span{
             font-weight: 300;
-            font-size: 12px;
+            font-size: 3vmin;
             line-height: 14px;
         }
         }
@@ -121,7 +148,16 @@
     h2{
         font-style: normal;
         font-weight: 300;
-        font-size: 23px;
+        font-size: 5.3vmin;
         line-height: 27px;
     }
+}
+#help-mobile:checked ~ .help-list{
+    display: block;
+}
+#help-mobile:checked ~ .help-contact-flex{
+    color: #FF7A00;
+}
+#policy-mobile:checked ~ .help-policy-list{
+    display: block;
 }
