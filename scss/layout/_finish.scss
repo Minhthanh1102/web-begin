@@ -101,6 +101,9 @@
             justify-content: space-between;
             padding: 0 10px;
             margin-top: 15px;
+            @include tablet{
+                line-height: unset;
+            }
             &-all{
                 display: flex;
                 span{

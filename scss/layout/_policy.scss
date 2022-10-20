@@ -1,3 +1,51 @@
-.policy{
-    
+.policy1{
+    padding: 0 20px 30px 20px;
+    background-image: linear-gradient(white, rgb(249, 233, 226));    
+    @include tablet{
+        padding: 0 60px 60px 60px;
+
+    }
+    &-head{
+        margin-top: 30px;
+    }
+    &-all{
+        span{
+            font-weight: 400;
+            font-size: 5vmin;
+            color: #FF7A00;
+            @include tablet{
+                font-size: 4vmin;
+            }
+        }
+        p{
+            font-weight: 600;
+            font-size: 4vmin;
+            margin: 0;
+            padding: 0 20px;
+            @include tablet{
+                font-size: 3vmin;
+            }
+
+        }
+        ul{
+            margin: 0;
+            li{
+                font-weight: 300;
+                font-size: 4vmin;
+                @include tablet{
+                    font-size: 3vmin;
+                }
+
+            }
+        }
+    }
+    h1{
+        font-weight: 500;
+        font-size: 7.4vmin;
+        color: #FF7A00;
+        text-align: center;
+        @include tablet{
+            font-size: 6vmin;
+        }
+    }
 }

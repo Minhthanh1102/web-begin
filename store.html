@@ -46,23 +46,37 @@
               </div>
               <div class="headmenu-list">
                 <ul>
-                  <li>TRANG CHỦ</li>
-                  <li>HOT DEAL</li>
+                  <li><a href="index.html">TRANG CHỦ</a> </li>
+                  <li><a href="products.html">HOT DEAL</a> </li>
                   <li>
-                    NAM
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="products.html">
+                      NAM
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
                   </li>
                   <li>
-                    NỮ
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="products2.html">
+
+                      NỮ
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
                   </li>
-                  <li>CỬA HÀNG</li>
+                  <li><a href="store.html">
+                    CỬA HÀNG</li>
+                  </a>
                   <li>
-                    HỖ TRỢ
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <a href="help.html">
+                      HỖ TRỢ
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
                   </li>
-                  <li>TÀI KHOẢN CỦA TÔI</li>
-                  <li>TRA CỨU ĐƠN HÀNG</li>
+                  <li>
+                    <a href="account.html">
+                      TÀI KHOẢN CỦA TÔI
+                    </a>
+                    </li>
+                  <li><a href="check.html">TRA CỨU ĐƠN HÀNG</a>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -97,7 +111,15 @@
                 </li>
               </ul>
             </div>
-            <div class="header-container-more--cart" href="#">
+            <div class="cart-mobile">              
+              <a href="minicart.html">
+                <img src="./img/shopping-cart.svg" alt="" />
+              </a>
+              <div class="cart-mobile-number">
+                <span>3</span>
+              </div>
+            </div>
+              <div class="header-container-more--cart" href="#">
               <img src="./img/shopping-cart.svg" alt="" />
               <div class="header-container-more--cart--child">
                 <div class="header-container-more--cart--top">
@@ -202,18 +224,76 @@
       <div class="cricle">
         <a href="index.html">Trang chủ</a>
         <span>|</span>
-        <a href="products.html">Thời trang nam</a>
+        <a href="store.html">Cửa hàng</a>
       </div>
-
-
+      <div class="store">
+        <h1>TÌM KIẾM CỬA HÀNG</h1>
+        <input type="checkbox" hidden name="" id="store-mobile">
+        <div for="store-color" class="store-flex">
+          <label for="store-mobile" class="store-flex-one">
+            <span>Chi Nhánh 1</span>
+          </label>
+          <label  for="store-mobile"  class="store-flex-one">
+            <span>Chi Nhánh 2</span>
+          </label>
+          <label  for="store-mobile" class="store-flex-one">
+            <span>Chi Nhánh 3</span>
+          </label>
+        </div>
+        <div class="store-hide">
+        <div class="store-home store-all">
+          <div class="store-home-img">
+            <img src="img/store/home.svg" alt="">
+          </div>
+          <span>114 Nguyễn Thái Bình, quận 1</span>
+        </div>
+        <div class="store-phone store-all">
+          <div class="store-phone-img">
+            <img src="img/store/Vector.svg" alt="">
+          </div>
+          <span>0977739082</span>
+        </div>
+        <div class="store-address">
+          <div class="store-address-img">
+            <img src="img/store/Group 394.svg" alt="">
+          </div>
+          <button>Chỉ đường</button>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5586171428804!2d106.6986675!3d10.768460300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3fe96042bb%3A0xb698177c3a912e90!2zMTE0IE5ndXnhu4VuIFRow6FpIELDrG5oLCBQaMaw4budbmcgTmd1eeG7hW4gVGjDoWkgQsOsbmgsIFF14bqtbiAxLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1sen!2s!4v1666284688752!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+      <div class="contact-mobile">
+        <input type="checkbox" hidden name="" id="messenger-mobile">
+        <label class="icon-messenger" for="messenger-mobile">
+          <img src="img/icon/—Pngtree—messenger logo icon_3595693 1.svg" alt="">
+        </label>
+        <div class="messenger">
+          <div class="messenger-head">
+            <img src="img/icon/Group 8.svg" alt="">
+            <label for="messenger-mobile">
+              <img src="img/icon/Group 399 (1).svg" alt="">
+            </label>
+          </div>
+          <div class="messenger-mid">
+            <p>Chat với Chúng tôi</p>
+            <span>Chào bạn! Bạn cần hỗ trợ gì không?</span>
+          </div>
+          <div class="messenger-btn">
+            <button>BẮT ĐẦU CHAT</button>
+          </div>
+          <div class="messenger-bot">
+            <span>Powered by messenger</span>
+          </div>
+        </div>
+      </div>
       <div class="footer">
         <div class="footer-categories">
-          <a href=""> ÁO NAM </a>
-          <a href=""> ÁO NỮ </a>
-          <a href=""> QUẦN NAM </a>
-          <a href=""> QUẦN NỮ </a>
-          <a href=""> ĐẦM/VÁY </a>
-          <a href=""> PHỤ KIỆN </a>
+          <a href="products.html"> ÁO NAM </a>
+          <a href="products2.html"> ÁO NỮ </a>
+          <a href="products.html"> QUẦN NAM </a>
+          <a href="products2.html"> QUẦN NỮ </a>
+          <a href="products2.html"> ĐẦM/VÁY </a>
+          <a href="products2.html"> PHỤ KIỆN </a>
         </div>
         <div class="footer-images">
           <img
@@ -231,50 +311,50 @@
               <a href="#" class="menu-link first">THÔNG TIN CỬA HÀNG</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Giới thiệu </a>
+              <a href="introduce.html" class="menu-link">Giới thiệu </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Hỗ trợ</a>
+              <a href="help.html" class="menu-link">Hỗ trợ</a>
             </li>
           </ul>
           <ul class="menu">
             <li class="menu-item">
-              <a href="#" class="menu-link first">HỆ THỐNG CỬA HÀNG</a>
+              <a href="store.html" class="menu-link first">HỆ THỐNG CỬA HÀNG</a>
             </li>
             <li class="menu-item">
               <img src="img/icon/map-pin.svg" alt="" />
-              <a href="#" class="menu-link"
+              <a href="store.html" class="menu-link"
                 >Cn1: 141 Nguyễn Thái Bình, Quận 1 - 028 777 66 789</a
               >
             </li>
             <li class="menu-item">
               <img src="img/icon/map-pin.svg" alt="" />
-              <a href="#" class="menu-link"
+              <a href="store.html" class="menu-link"
                 >Cn2: 223/4/12 Võ Văn Tần, Quận 3 - 028 777 66 779</a
               >
             </li>
             <li class="menu-item">
               <img src="img/icon/map-pin.svg" alt="" />
-              <a href="#" class="menu-link"
+              <a href="store.html" class="menu-link"
                 >Cn3: 798/1 Sư Vạn Hạnh, Quận 10 - 028 777 66 789</a
               >
             </li>
           </ul>
           <ul class="menu">
             <li class="menu-item">
-              <a href="#" class="menu-link first">CHÍNH SÁCH</a>
+              <a href="help.html" class="menu-link first">CHÍNH SÁCH</a>
             </li>
             <li class="menu-item">
               <img src="img/icon/send.svg" alt="" />
-              <a href="#" class="menu-link">Chính sách mua hàng </a>
+              <a href="policy1.html" class="menu-link">Chính sách mua hàng </a>
             </li>
             <li class="menu-item">
               <img src="img/icon/send.svg" alt="" />
-              <a href="#" class="menu-link">Chính sách đổi trả</a>
+              <a href="policy2.html" class="menu-link">Chính sách đổi trả</a>
             </li>
             <li class="menu-item">
               <img src="img/icon/send.svg" alt="" />
-              <a href="#" class="menu-link">Chính sách bảo mật</a>
+              <a href="policy3.html" class="menu-link">Chính sách bảo mật</a>
             </li>
           </ul>
           <ul class="menu">
@@ -293,6 +373,7 @@
           </ul>
         </div>
       </div>
+      <a class="to-top"></a>
 
       <div class="loading"></div>
     </div>
@@ -319,6 +400,9 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="js/hide.js"></script>
+<script src="js/totop.js"></script>
+    <script src="js/color.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
