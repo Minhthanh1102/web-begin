@@ -4874,6 +4874,9 @@ select {
 .help-policy-list {
   display: none;
 }
+.help-policy-list a {
+  color: #000000;
+}
 .help-policy-head {
   display: flex;
   justify-content: space-between;
@@ -4886,6 +4889,9 @@ select {
 .help-policy ul {
   margin-top: 20px;
   padding-left: 35px;
+}
+.help-policy ul a {
+  color: #000000;
 }
 .help-policy ul li {
   font-size: 4.3vmin;
