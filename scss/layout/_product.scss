@@ -5,6 +5,9 @@
     @include sm-desk{
         padding: 0 40px;
     }
+    @include tablet{
+        display: none;
+    }
     &-sort{
         margin-left: 211px;
         select{
@@ -455,6 +458,9 @@
             display: flex;
             flex-direction: column;
             display: none;
+            position: absolute;
+            background: #fff;
+            z-index: 1;
             p{
                 margin: 5px 0;
             }

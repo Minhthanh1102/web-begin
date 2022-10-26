@@ -1,6 +1,7 @@
 .feedback{
     margin-top: 45px;
-    margin-left: 20px;
+    // margin-left: 20px;
+    padding: 0 20px;
     position: relative;
     &-close{
         img{
@@ -19,24 +20,36 @@
         display: flex;
         // margin-left: 20px;
         margin-top: 30px;
-        margin-right: 20px;
+        // margin-right: 20px;
         &-left{
-                font-size: 40px;
-                font-weight: 700;           
+                font-size: 8vmin;
+                font-weight: 700;  
+                width: 150px;         
         }
         &-right{
             display: flex;
             flex-direction: column;
-            margin-left: 28px;
+            // margin-left: 28px;
+            &--star{
+                img{
+                    width: 100%;
+                }
+            }
             span{
                 font-weight: 700;
-                font-size: 13px;
+                font-size: 3vmin;
+                
+                margin-right: 5px;
+                width: 40px;
+
             }
             &--text{
-                margin-right: 5px;
+                // margin-right: 5px;
+                display: flex;
             }
             &--numb{
                 margin-left: 14px;
+                width: 50px;
             }
             &--flex{
                 display: flex;
@@ -46,7 +59,7 @@
 }
 .users{
     // margin: 0 20px;
-    margin-right: 20px;
+    // margin-right: 20px;
 }
 .comment{
     &-back{

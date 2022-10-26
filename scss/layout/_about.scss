@@ -310,7 +310,8 @@
                         display: block;
                         height: 32px;
                         border: none;
-                        max-width: 166px;
+                        // max-width: 166px;
+                        flex-grow: 2;
                         width: 100%;
                         cursor: pointer;
                         &:hover{
@@ -319,7 +320,7 @@
                         display: inline-block; 
                         text-decoration: none;
                         color: #fff;
-                        font-size: 12px;
+                        font-size: 3vmin;
                         // margin-right: 24px;
                         background: #000;
                         border-radius: 3px;
@@ -839,6 +840,7 @@
                 span{
                     font-size: 16px;
                     font-weight: bold;
+
                 }
             }
             &--two{
@@ -853,6 +855,9 @@
             span{
                 font-size: 16px;
                 // font-weight: bold;
+                @include mobile{
+                    font-size: 4vmin;
+                }
             }
             img{
                 width: 14px;
@@ -901,7 +906,7 @@
     }
     .about-infor{
         // display: none;
-        margin-left: 5px;
+        // margin-left: 5px;
     }
     .about-infor--text{
         display: none;
@@ -933,8 +938,10 @@
     .about-infor--size--help{
     }
     .about-infor-now{
-        margin-left: 17px;
+        // margin-left: 17px;
+        margin: 0;
         height: 32px;
+        flex-grow: 1;
     }
     .menu-about{
         margin-top: 80px;
@@ -947,5 +954,50 @@
     .header-about{
         max-width: 739px;
         width: 80%;
+    }
+}
+.buy{
+    display: none;
+    padding: 0 20px;
+    h2{
+        margin: 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 3.6vmin;
+        line-height: 16px;
+        }
+    &-flex{
+        display: flex;
+        justify-content: space-between;
+        gap: 0 5px;
+        &-all{
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            button{
+                width: 100%;
+                background: #FFFFFF;
+                border: 1px solid #000000;
+                border-radius: 4px;
+                padding: 8px 0;
+                font-size: 3vmin;
+            }
+        }
+    }
+    &-button{
+        button{
+            background: #FF7A00;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            color: #fff;
+            width: 100%;
+            padding: 8px 0;
+            font-size: 4vmin;
+            font-weight: bold;
+        }
+    }
+    @include mobile{
+        display: block;
     }
 }

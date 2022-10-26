@@ -1,0 +1,26 @@
+.variable{
+    display: none;
+    @include mobile{
+        display: block;
+    }
+    &-all{
+        margin-right: 20px;
+        text-align: center;
+    }
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0;
+    }
+    label{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+
+        color: #FF7A00;
+    }
+    img{
+        margin: 0 auto;
+        margin-top: 10px;
+    }    
+}

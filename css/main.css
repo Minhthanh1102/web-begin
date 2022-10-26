@@ -1220,6 +1220,10 @@ a {
   transform: translateX(0);
 }
 
+select {
+  background-color: #fff;
+}
+
 .slick-dots {
   position: absolute;
   bottom: 0%;
@@ -1552,6 +1556,11 @@ a {
 @media (max-width: 1366px) {
   .product-catalog {
     padding: 0 40px;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .product-catalog {
+    display: none;
   }
 }
 .product-catalog-sort {
@@ -1988,6 +1997,9 @@ a {
   display: flex;
   flex-direction: column;
   display: none;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
 }
 .female-flex-hide p {
   margin: 5px 0;
@@ -2127,6 +2139,11 @@ a {
   width: 100%;
   margin-top: 33px;
   margin-bottom: 33px;
+}
+@media (max-width: 739px) {
+  .show a {
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 739px) {
@@ -2434,7 +2451,7 @@ a {
 
 .feedback {
   margin-top: 45px;
-  margin-left: 20px;
+  padding: 0 20px;
   position: relative;
 }
 .feedback-close img {
@@ -2449,33 +2466,34 @@ a {
 .feedback-votes {
   display: flex;
   margin-top: 30px;
-  margin-right: 20px;
 }
 .feedback-votes-left {
-  font-size: 40px;
+  font-size: 8vmin;
   font-weight: 700;
+  width: 150px;
 }
 .feedback-votes-right {
   display: flex;
   flex-direction: column;
-  margin-left: 28px;
+}
+.feedback-votes-right--star img {
+  width: 100%;
 }
 .feedback-votes-right span {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 3vmin;
+  margin-right: 5px;
+  width: 40px;
 }
 .feedback-votes-right--text {
-  margin-right: 5px;
+  display: flex;
 }
 .feedback-votes-right--numb {
   margin-left: 14px;
+  width: 50px;
 }
 .feedback-votes-right--flex {
   display: flex;
-}
-
-.users {
-  margin-right: 20px;
 }
 
 .comment-back {
@@ -4091,13 +4109,13 @@ a {
     display: block;
     height: 32px;
     border: none;
-    max-width: 166px;
+    flex-grow: 2;
     width: 100%;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 3vmin;
     background: #000;
     border-radius: 3px;
     font-style: normal;
@@ -4687,6 +4705,11 @@ a {
 .user-box--comment span {
   font-size: 16px;
 }
+@media (max-width: 739px) {
+  .user-box--comment span {
+    font-size: 4vmin;
+  }
+}
 .user-box--comment img {
   width: 14px;
   height: 14px;
@@ -4736,9 +4759,6 @@ a {
   .user {
     display: none;
   }
-  .about-infor {
-    margin-left: 5px;
-  }
   .about-infor--text {
     display: none;
   }
@@ -4767,8 +4787,9 @@ a {
     margin-top: 0;
   }
   .about-infor-now {
-    margin-left: 17px;
+    margin: 0;
     height: 32px;
+    flex-grow: 1;
   }
   .menu-about {
     margin-top: 80px;
@@ -4782,6 +4803,52 @@ a {
     width: 80%;
   }
 }
+.buy {
+  display: none;
+  padding: 0 20px;
+}
+.buy h2 {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3.6vmin;
+  line-height: 16px;
+}
+.buy-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 5px;
+}
+.buy-flex-all {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.buy-flex-all button {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-size: 3vmin;
+}
+.buy-button button {
+  background: #FF7A00;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 4vmin;
+  font-weight: bold;
+}
+@media (max-width: 739px) {
+  .buy {
+    display: block;
+  }
+}
+
 .help {
   padding: 0 20px;
 }
@@ -5824,6 +5891,111 @@ a {
 
 #messenger-mobile:checked ~ .messenger {
   transform: translateY(0);
+}
+
+.variable {
+  display: none;
+}
+@media (max-width: 739px) {
+  .variable {
+    display: block;
+  }
+}
+.variable-all {
+  margin-right: 20px;
+  text-align: center;
+}
+.variable p {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+.variable label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF7A00;
+}
+.variable img {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.detail {
+  padding: 0 20px;
+  position: relative;
+}
+.detail-other h2 {
+  text-align: center;
+}
+.detail-x {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.detail-color {
+  margin-top: 20px;
+  display: flex;
+}
+.detail-color-img {
+  display: flex;
+  gap: 0 25px;
+}
+.detail-color p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 3.5vmin;
+  margin-right: 20px;
+}
+.detail-size {
+  display: flex;
+  margin-top: 15px;
+}
+.detail-size p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 3.5vmin;
+}
+.detail-size-flex {
+  margin-left: 30px;
+  display: flex;
+  gap: 0 25px;
+}
+.detail-size-flex-gray {
+  text-decoration-line: line-through;
+  color: #D1D1D1;
+}
+.detail-size-flex span {
+  font-weight: 700;
+  font-size: 3.5vmin;
+}
+.detail-all {
+  margin-top: 15px;
+}
+.detail-all span {
+  font-weight: 600;
+  font-size: 4vmin;
+}
+.detail-all p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 3.5vmin;
+}
+.detail-first span {
+  font-weight: 400;
+  font-size: 4vmin;
+  line-height: 19px;
+}
+.detail-first p {
+  font-weight: 400;
+  font-size: 2.5vmin;
+  margin: 0;
+}
+.detail h2 {
+  font-weight: 400;
+  font-size: 5vmin;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .footer-images {
