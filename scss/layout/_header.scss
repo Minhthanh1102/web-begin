@@ -562,6 +562,11 @@
 
     }
 }
+.header-categories-items{
+    img{
+        transform: translateY(30%);
+    }
+}
 #nav-input:checked ~ .headmenu{
     transform: translateX(0);
 }

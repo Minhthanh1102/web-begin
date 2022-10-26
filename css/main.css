@@ -1212,6 +1212,10 @@ a {
   color: #fff;
 }
 
+.header-categories-items img {
+  transform: translateY(30%);
+}
+
 #nav-input:checked ~ .headmenu {
   transform: translateX(0);
 }
@@ -1220,6 +1224,7 @@ a {
   position: absolute;
   bottom: 0%;
   left: 50%;
+  padding: 0;
   transform: translate(-50%, -20px);
   display: flex !important;
   align-items: center;
@@ -1241,6 +1246,7 @@ a {
   padding: 6px;
   border-radius: 50px;
   background-color: #eee;
+  border: 1px solid #000;
   /* border: none; */
   outline: none;
 }
@@ -1924,6 +1930,83 @@ a {
     line-height: 21px;
   }
 }
+.female-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.female-flex-left-border {
+  display: flex;
+  padding: 0 5px;
+}
+.female-flex-left-border p {
+  margin: 0;
+}
+
+.pp {
+  display: none;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .pp {
+    display: block;
+  }
+}
+@media (max-width: 739px) {
+  .pp {
+    display: block;
+  }
+}
+
+.female-box {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+.female-flex-left {
+  position: relative;
+}
+.female-flex p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.female-flex span {
+  font-weight: 300;
+  font-size: 12px;
+}
+.female-flex-box {
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 7px;
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+}
+.female-flex-box:active {
+  background-color: #D9D9D9;
+}
+.female-flex-hide {
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.female-flex-hide p {
+  margin: 5px 0;
+}
+.female-opacity {
+  text-align: center;
+  margin-top: 10px;
+}
+.female-opacity img {
+  opacity: 0.1;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+#female-hide-mobile:checked ~ .female-flex-hide {
+  transform: translateX(0);
+  display: block;
+}
+
 .signup {
   position: relative;
   margin-bottom: 200px;
@@ -2059,7 +2142,7 @@ a {
 }
 .overview {
   position: relative;
-  height: 100vh;
+  height: 500px;
   background-color: #fff;
   margin-bottom: 120px;
   margin-top: 60px;
@@ -2521,7 +2604,7 @@ a {
 }
 .success-btn {
   margin-top: 100px;
-  margin-bottom: 400px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -2534,7 +2617,7 @@ a {
 .forgot-btn {
   align-items: center;
   text-align: center;
-  margin-bottom: 550px;
+  margin-bottom: 50px;
 }
 .forgot-text {
   align-items: center;
@@ -2559,7 +2642,7 @@ a {
 .forgot form {
   position: relative;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   max-width: 378px;
   width: 100%;
 }
@@ -2621,7 +2704,7 @@ a {
 .otp-btn {
   align-items: center;
   text-align: center;
-  margin-bottom: 480px;
+  margin-bottom: 50px;
 }
 .otp-text {
   align-items: center;
@@ -5758,7 +5841,7 @@ a {
 @media (max-width: 1366px) {
   .footer-image {
     width: 100%;
-    height: 40%;
+    height: 30%;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -5800,8 +5883,8 @@ a {
   .footer .footer-image--mobile {
     display: inline;
     position: absolute;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: 627px;
   }
   .footer .footer-categories {
     display: none;
@@ -5851,8 +5934,8 @@ a {
 }
 .menu-link {
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 2vmin;
   line-height: 19px;
   color: #fff;
 }
@@ -5863,11 +5946,16 @@ a {
 }
 @media (max-width: 739px) {
   .menu-link {
-    font-size: 4vmin;
+    font-size: 3.5vmin;
   }
 }
 .menu-item {
   margin-bottom: 10px;
+}
+@media (max-width: 739px) {
+  .menu-item {
+    margin-bottom: 5px;
+  }
 }
 @media (max-width: 739px) {
   .menu-item--img {
@@ -5895,6 +5983,29 @@ a {
 @media (max-width: 739px) {
   .menu-item {
     text-align: center;
+  }
+}
+
+@media (max-width: 739px) {
+  .menu-item-mobile {
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 739px) {
+  .menu-item-mobile2 {
+    text-align: left;
+    transform: translateX(30%);
+  }
+}
+
+.menu-link-mobile {
+  display: none;
+}
+@media (max-width: 739px) {
+  .menu-link-mobile {
+    display: block;
   }
 }
 
