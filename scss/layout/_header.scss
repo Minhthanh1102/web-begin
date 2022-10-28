@@ -505,6 +505,35 @@
     z-index: 1;
     transform: translateX(-100%);
     transition: transform linear 0.2s,opacity linear 0.2s;
+    &-search{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 20%;
+        &-right{
+            background: #000000;
+            border: 1px solid #FFFFFF;
+            max-width: 100px;
+            width: 100%;
+            margin-left: 20px;
+            position: relative;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        &-left{
+            width: 100%;
+            input{
+                height: 50px;
+                width: 100%;
+                font-size: 16px;
+                padding: 0 5px;
+            }
+        }
+    }
     &-bar{
         display: flex;
         justify-content: space-between;
@@ -562,9 +591,26 @@
 
     }
 }
+.header-categories-shop{
+    a{
+        color: #000;
+    }
+}
 .header-categories-items{
     img{
         transform: translateY(30%);
+    }
+}
+.all-hidden{
+    margin-top: 30px;
+
+    label{
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000000;
+    font-size: 16px;
     }
 }
 #nav-input:checked ~ .headmenu{
@@ -572,4 +618,23 @@
 }
 select{
     background-color: #fff;
+}
+.male-hidden-mobile{
+    display: none;
+}
+#hidden-male:checked ~ .male-hidden-mobile{
+    display: block;
+}
+.female-hidden-mobile{
+    display: none;
+}
+#hidden-female:checked ~ .female-hidden-mobile{
+    display: block;
+}
+
+.help-hidden-mobile{
+    display: none;
+}
+#hidden-help:checked ~ .help-hidden-mobile{
+    display: block;
 }
