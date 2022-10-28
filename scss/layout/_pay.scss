@@ -320,7 +320,9 @@
                     margin-right: 10px;
                 }
                 a{
-                    font-size: 12px;
+                    width: 100%;
+                    min-width: 200px;
+                    font-size: 2.7vmin;
                     display: flex;
                     align-items: center;
                     color: #000000;
