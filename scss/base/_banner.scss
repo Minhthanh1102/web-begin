@@ -36,6 +36,9 @@
     @include tablet{
       margin-top: 150px;
     }
+    @include tablet-mini{
+      margin-top: 80px;
+    }
     @include mobile{
       margin-top: 80px;
     }

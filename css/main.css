@@ -1412,6 +1412,11 @@ select {
     margin-top: 150px;
   }
 }
+@media (min-width: 501px) and (max-width: 740px) {
+  .banner {
+    margin-top: 80px;
+  }
+}
 @media (max-width: 500px) {
   .banner {
     margin-top: 80px;
