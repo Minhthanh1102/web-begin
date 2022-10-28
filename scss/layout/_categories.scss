@@ -276,6 +276,9 @@
                 // margin-top: 16px;
                 margin-bottom: 10px;
                 margin-top: 0;
+                @include tablet-mini{
+                    margin-bottom: 0;
+                }
             }
             a{
                 font-size: 16px;
@@ -305,7 +308,7 @@
                 }
                 @include tablet-mini{
                     background-color: #FFFFFFB8;
-                    max-height: 27px;
+                    // max-height: 27px;
                     // max-width: 115px;
                     opacity: unset;
                     bottom: unset;

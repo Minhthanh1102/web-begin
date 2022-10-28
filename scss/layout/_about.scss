@@ -229,11 +229,7 @@
         }
         &--color{
             p{
-                @include tablet-mini{
-                    padding-bottom: 0 !important;
-                    font-weight: 500;
-                    font-size: 10px !important;
-                }
+               
                 @include mobile{
                     padding-bottom: 0 !important;
                     font-weight: 500;
@@ -242,8 +238,7 @@
             }
             img{
                 @include tablet-mini{
-                    width: 90px;
-                    height: 20px;
+                    margin-top: 5px;
                 }
                 @include mobile{
                     width: 90px;
@@ -350,7 +345,7 @@
                         display: inline-block; 
                         text-decoration: none;
                         color: #fff;
-                        font-size: 3vmin;
+                        font-size: 2.5vmin;
                         // margin-right: 24px;
                         background: #000;
                         border-radius: 3px;
@@ -506,7 +501,7 @@
                 @include tablet-mini{
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 10px;
+                    font-size: 3vmin;
                 }
                 @include mobile{
                     font-style: normal;
@@ -546,6 +541,12 @@
                 @include tablet{
                     padding: 0;
                     margin-bottom: 5px;
+                }
+                @include tablet-mini{
+                    padding-bottom: 0 !important;
+                    font-weight: 500;
+                    font-size: 3vmin !important;
+                    margin-top: 10px;
                 }
             }
             img{
@@ -591,7 +592,7 @@
                 }
                 @include tablet-mini{
                     font-weight: 500;
-                    font-size: 16px;
+                    font-size: 3vmin;
                 }
                 @include mobile{
                     font-weight: 500;
@@ -613,7 +614,7 @@
                 }
                 @include tablet-mini{
                     font-weight: 300;
-                    font-size: 8px;
+                    font-size: 2.5vmin;
                     transform: translateY(10px);
                 }
                 @include mobile{
@@ -655,8 +656,6 @@
             img{
                 margin-right: 9px;
                 @include tablet-mini{
-                    width: 11.66px;
-                    height: 13px;
                     margin: 0;
                 }
                 @include mobile{
@@ -1057,7 +1056,7 @@
     .about-infor--size--all{
         font-style: normal;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 3vmin;
         color: #000;
     }
     .about-infor--size--xl{
@@ -1067,6 +1066,8 @@
         margin-top: 0;
     }
     .about-infor--size--help{
+    width: 100%;
+    text-align: right;
     }
     .about-infor-now{
         // margin-left: 17px;
@@ -1081,6 +1082,12 @@
         // margin: 5px 0;
         font-weight: 300;
         font-size: 12px;
+        @include tablet{
+            font-size: 2.5vmin;
+        }
+        @include tablet-mini{
+            font-size: 2.5vmin;
+        }
     }
     .header-about{
         max-width: 739px;
@@ -1177,6 +1184,12 @@
                 border-radius: 4px;
                 padding: 8px 0;
                 font-size: 3vmin;
+                @include tablet{
+                    font-size: 2.5vmin;
+                }
+                @include tablet-mini{
+                    font-size: 2.5vmin;
+                }
             }
         }
     }
@@ -1191,6 +1204,12 @@
             padding: 8px 0;
             font-size: 4vmin;
             font-weight: bold;
+            @include tablet{
+                font-size: 2.5vmin;
+            }
+            @include tablet-mini{
+                font-size: 2.5vmin;
+            }
         }
     }
     @include tablet-mini{

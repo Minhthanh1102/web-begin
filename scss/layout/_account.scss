@@ -6,12 +6,12 @@
     @include tablet{
         margin-top: 180px;
         padding: 0 60px 60px 60px;
-
+        margin-bottom: 0;
     }
     @include tablet-mini{
         margin-top: 80px;
         padding: 0 60px 60px 60px;
-
+        margin-bottom: 0;
     }
     &-box{
         border: 1px solid #000000;
@@ -228,10 +228,10 @@
                 line-height: 16px;
                 color: #000000;
                 @include tablet{
-                    left: 5%;
+                    left: 7%;
                 }
                 @include tablet-mini{
-                    left: 5%;
+                    left: 7%;
                 }
             }
         }
@@ -275,10 +275,8 @@
                 padding: 0;
                 margin: 0;
                 @include tablet{
-                    line-height: 30px;
                 }
                 @include tablet-mini{
-                    line-height: 30px;
                 }
             }
             span{

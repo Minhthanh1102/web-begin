@@ -281,10 +281,10 @@
                             font-size: 13px;
                         }
                         @include tablet{
-                            font-size: 1.7vmin;
+                            font-size: 1.85vmin;
                         }
                         @include tablet-mini{
-                            font-size: 1.7vmin;
+                            font-size: 1.85vmin;
                         }
                         @include mobile{
                             font-size: 2.5vmin;
@@ -322,10 +322,10 @@
                         //     font-size: 14px;
                         // }
                         @include tablet{
-                            font-size: 2.5vmin;
+                            font-size: 2.4vmin;
                         }
                         @include tablet-mini{
-                            font-size: 2.5vmin;
+                            font-size: 2.4vmin;
                         }
                         @include mobile{
                             font-size: 12px;
@@ -463,6 +463,14 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    @include tablet{
+        justify-content: flex-start;
+        gap: 0 20px;
+    }
+    @include tablet-mini{
+        justify-content: flex-start;
+        gap: 0 20px;
+    }
 }
 .female-flex-left-border{
     display: flex;
