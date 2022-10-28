@@ -131,6 +131,14 @@
         padding: 25px 25px 0 25px;
         display: flex;
         justify-content: space-between;
+        @include tablet{
+            gap: 0 20px;
+            justify-content: flex-start;
+        }
+        @include tablet-mini{
+            gap: 0 20px;
+            justify-content: flex-start;
+        }
         &-infor{
             h2{
                 font-size: 4vmin;

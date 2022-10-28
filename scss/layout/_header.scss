@@ -45,6 +45,24 @@
             margin-left: 45px;
         }
     }
+    @include tablet-mini{
+        // max-width: 739px;
+        // width: 54%;
+        // width: 100vw;
+        padding: 0;
+        .header-container{
+            padding: 0;
+            justify-content: space-between;
+            padding: 0 20px;
+            margin-bottom: 0;
+        }
+        .header-container-more--user{
+            margin: 0;
+        }
+        .header-container-logo{
+            margin-left: 45px;
+        }
+    }
     &-categories{
         &--list{
             font-style: normal;
@@ -146,6 +164,12 @@
                     display: block;
                 }
             }
+            @include tablet-mini{
+                display: block;
+                &:active .headmenu{
+                    display: block;
+                }
+            }
         }
         &-logo{
             p{
@@ -215,6 +239,9 @@
                     display: none;
                 }
                 @include mobile{
+                    display: none;
+                }
+                @include tablet-mini{
                     display: none;
                 }
                 &--total{
@@ -444,12 +471,41 @@
             }
         }
     }
+    @include tablet-mini{
+        max-width: 739px;
+        .header-container{
+            // justify-content: flex-start ;
+        }
+        .header-container-search{
+            display: none;
+        }
+        .header-container-order{
+            display: none;
+        }
+        .header-categories{
+            display: none;
+        }
+        .header-container-logo{
+            width: 51px;
+            height: 40px;
+            img{
+                width: 51px;
+            height: 40px;
+            }
+            p{
+                font-size: 6px;
+            }
+        }
+    }
 }
 .contact{
     @include tablet{
         display: none;
     }
     @include mobile{
+        display: none;
+    }
+    @include tablet-mini{
         display: none;
     }
     &-box{
@@ -575,6 +631,9 @@
     @include mobile{
         display: block;
     }
+    @include tablet-mini{
+        display: block;
+    }
     &-number{
         background: #FF7A00;
         border-radius: 50%;
@@ -636,5 +695,12 @@ select{
     display: none;
 }
 #hidden-help:checked ~ .help-hidden-mobile{
+    display: block;
+}
+
+.testabc{
+    display: none;
+}
+#testaaa:checked ~ .testabc{
     display: block;
 }

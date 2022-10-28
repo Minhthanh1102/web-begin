@@ -8,6 +8,11 @@
         padding: 0 60px 60px 60px;
 
     }
+    @include tablet-mini{
+        margin-top: 80px;
+        padding: 0 60px 60px 60px;
+
+    }
     &-box{
         border: 1px solid #000000;
         border-radius: 8px;
@@ -16,11 +21,17 @@
         @include tablet{
             margin-top: 30px;
         }
+        @include tablet-mini{
+            margin-top: 30px;
+        }
         &-btn{
             text-align: center;
             margin-top: 10px;
             margin-bottom: 12px;
             @include tablet{
+                margin-top: 50px;
+            }
+            @include tablet-mini{
                 margin-top: 50px;
             }
             button{
@@ -34,6 +45,9 @@
                 outline: none;
                 padding: 10px 5px;
                 @include tablet{
+                    padding: 20px;
+                }
+                @include tablet-mini{
                     padding: 20px;
                 }
             }
@@ -55,6 +69,9 @@
                     @include tablet{
                         line-height: unset;
                     }
+                    @include tablet-mini{
+                        line-height: unset;
+                    }
                 }
                 span{
                     font-weight: 600;
@@ -73,6 +90,9 @@
                     @include tablet{
                         max-width: 25%;
                     }
+                    @include tablet-mini{
+                        max-width: 25%;
+                    }
                 }
                 span{
                     font-weight: 400;
@@ -80,6 +100,10 @@
                     line-height: 19px;
                     max-width: 105px;
                     @include tablet{
+                        max-width: 200px;
+                        line-height: 30px;
+                    }
+                    @include tablet-mini{
                         max-width: 200px;
                         line-height: 30px;
                     }
@@ -97,6 +121,9 @@
                     line-height: 16px;
                     margin: 5px 0;
                     @include tablet{
+                        line-height: unset;
+                    }
+                    @include tablet-mini{
                         line-height: unset;
                     }
                 }
@@ -118,12 +145,18 @@
                     @include tablet{
                         line-height: unset;
                     }
+                    @include tablet-mini{
+                        line-height: unset;
+                    }
                 }
                 span{
                     font-weight: 700;
                     font-size: 3vmin;
                     line-height: 16px;
                     @include tablet{
+                        line-height: unset;
+                    }
+                    @include tablet-mini{
                         line-height: unset;
                     }
                 }
@@ -155,12 +188,20 @@
             height: 120px;
             justify-content: space-around;
         }
+        @include tablet-mini{
+            max-width: 120px;
+            height: 120px;
+            justify-content: space-around;
+        }
         span{
             text-align: center;
             font-size: 2.2vmin;
             line-height: 12px;
             color: #fff;
             @include tablet{
+                line-height: unset;
+            }
+            @include tablet-mini{
                 line-height: unset;
             }
         }
@@ -189,12 +230,16 @@
                 @include tablet{
                     left: 5%;
                 }
+                @include tablet-mini{
+                    left: 5%;
+                }
             }
         }
     }
     &-head{
         display: flex;
         position: relative;
+        margin-top: 80px;
         &-icon{
             display: flex;
             justify-content: space-between;
@@ -205,8 +250,9 @@
                 align-items: center;
                 display: flex;
                 flex-direction: column;
-                span{
+                a{
                     font-size: 2.8vmin;
+                    color: #000000;
                 }
             }
         }
@@ -219,14 +265,19 @@
             flex-direction: column;
             justify-content: end;
             margin-bottom: 3px;
+            a{
+                color: #000000;
+            }
             p{
                 font-style: normal;
                 font-weight: 700;
                 font-size: 4vmin;
-                line-height: 19px;
                 padding: 0;
                 margin: 0;
                 @include tablet{
+                    line-height: 30px;
+                }
+                @include tablet-mini{
                     line-height: 30px;
                 }
             }
@@ -423,6 +474,16 @@
                 width: 100%;
                 flex: 3;
                 padding: 10px 0;
+                @include tablet{
+                    width: 100%;
+                    max-width: unset;
+                    padding: 50px 0;
+                }
+                @include tablet-mini{
+                    width: 100%;
+                    max-width: unset;
+                    padding: 50px 0;
+                }
                 span{
                     font-weight: 400;
                     font-size: 2.8vmin;
@@ -441,6 +502,12 @@
                 display: flex;
                 align-items: flex-end;
                 margin-bottom: 12px;
+                @include tablet{
+                    margin-bottom: 30px;
+                }
+                @include tablet-mini{
+                    margin-bottom: 30px;
+                }
                 &-margin{
                     margin-right: 10px;
                 }
@@ -467,6 +534,12 @@
                 writing-mode: vertical-rl;
                 transform: rotate(-180deg);
                 margin-right: 5px;
+                @include tablet{
+                    margin-right: 15px;
+                }
+                @include tablet-mini{
+                    margin-right: 15px;
+                }
             }
         }
     }
@@ -475,5 +548,13 @@
         img{
             width: 100%;
         }
+    }
+}
+.love{
+    padding: 0 20px;
+    &-text{
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 3vmin;
     }
 }
