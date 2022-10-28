@@ -45,18 +45,53 @@
                 font-size: 4.3vmin;
                 line-height: 21px;
                 margin-bottom: 15px;
+                @include tablet{
+                    font-size: 3vmin;
+                }
+                @include tablet-mini{
+                    font-size: 3vmin;
+                }
             }
         }
     }
     &-list{
     text-align: center;
     display: none;
+    img{
+        @include tablet{
+            margin-bottom: 10px;
+        }
+        @include tablet-mini{
+            margin-bottom: 10px;
+        }
+    }
     h3{
         font-style: normal;
         font-size: 3vmin;
         line-height: 14px;
+        @include tablet{
+            margin: 0;
+        }
+        @include tablet-mini{
+            margin: 0;
+        }
+        
     }   
         &-phone{
+            h3{
+                @include tablet{
+                    margin: 5px 0;
+                }
+                @include tablet{
+                    margin: 5px 0;
+                }
+            }
+            @include tablet{
+                margin-top: 20px;
+            }
+            @include tablet-mini{
+                margin-top: 20px;
+            }
             p{
                 margin-top: 5px;
                 margin-bottom: 10px;
@@ -65,16 +100,34 @@
                 line-height: 14px;
                 text-align: center;
                 text-decoration-line: underline;
+                @include tablet{
+                    margin-top: 0;
+                }
+                @include tablet-mini{
+                    margin-top: 0;
+                }
             }
             span{
                 font-size: 2.5vmin;
             }
         }
         &-home{
+            @include tablet{
+                margin-top: 20px;
+            }
+            @include tablet-mini{
+                margin-top: 20px;
+            }
             span{
                 font-weight: 300;
                 font-size: 12px;
                 line-height: 14px;
+                @include tablet{
+                    font-size: 2vmin;
+                }
+                @include tablet-mini{
+                    font-size: 2vmin;
+                }
                 a{
                     text-decoration-line: underline;
                     color: #000000;
@@ -84,6 +137,14 @@
             h3{
                 margin-top: 15px;
                 margin-bottom: 5px;
+                @include tablet{
+                    margin: 0;
+                    margin-bottom: 5px;
+                }
+                @include tablet-mini{
+                    margin: 0;
+                    margin-bottom: 5px;
+                }
             }
         }
         &-mail{
@@ -91,6 +152,14 @@
             h3{
                 margin-top: 15px;
                 margin-bottom: 5px;
+                @include tablet{
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+                @include tablet-mini{
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
             }
             p{
                 font-weight: bold;
@@ -101,6 +170,12 @@
             }
             span{
                 font-size: 2.5vmin;
+                @include tablet{
+                    line-height: 10px;
+                }
+                @include tablet-mini{
+                    line-height: 10px;
+                }
             }
         }
         &-time{
@@ -109,6 +184,14 @@
                 font-weight: bold;
                 font-size: 3vmin;
                 line-height: 14px;
+                @include tablet{
+                    font-size: 2.5vmin;
+                    margin: 5px 0;
+                }
+                @include tablet-mini{
+                    font-size: 2.5vmin;
+                    margin: 5px 0;
+                    margin-bottom: 10px;                }
             }
             span{
                 font-weight: 300;
@@ -135,6 +218,12 @@
             font-weight: bold;
             font-size: 2.8vmin;
             line-height: 14px;
+            @include tablet{
+                font-size: 2.5vmin;
+            }
+            @include tablet-mini{
+                font-size: 2.5vmin;
+            }
         }
     }
         &-text{
@@ -142,11 +231,23 @@
             font-weight: 300;
             font-size: 3.3vmin;
             line-height: 16px;
+            @include tablet{
+                font-size: 3vmin;
+            }
+            @include tablet-mini{
+                font-size: 3vmin;
+            }
         }
         span{
             font-weight: 300;
             font-size: 3vmin;
             line-height: 14px;
+            @include tablet{
+                font-size: 2.5vmin;
+            }
+            @include tablet-mini{
+                font-size: 2.5vmin;
+            }
         }
         }
     }
@@ -160,6 +261,12 @@
         font-weight: 300;
         font-size: 5.3vmin;
         line-height: 27px;
+        @include tablet{
+            font-size: 3vmin;
+        }
+        @include tablet-mini{
+            font-size: 3vmin;
+        }
     }
 }
 #help-mobile:checked ~ .help-list{

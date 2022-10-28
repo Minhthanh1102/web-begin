@@ -5,6 +5,10 @@
         padding: 0 60px 60px 60px;
 
     }
+    @include tablet-mini{
+        padding: 0 60px 60px 60px;
+
+    }
     &-head{
         margin-top: 30px;
     }
@@ -16,6 +20,9 @@
             @include tablet{
                 font-size: 4vmin;
             }
+            @include tablet-mini{
+                font-size: 4vmin;
+            }
         }
         p{
             font-weight: 600;
@@ -23,6 +30,9 @@
             margin: 0;
             padding: 0 20px;
             @include tablet{
+                font-size: 3vmin;
+            }
+            @include tablet-mini{
                 font-size: 3vmin;
             }
 
@@ -35,6 +45,9 @@
                 @include tablet{
                     font-size: 3vmin;
                 }
+                @include tablet-mini{
+                    font-size: 3vmin;
+                }
 
             }
         }
@@ -45,6 +58,9 @@
         color: #FF7A00;
         text-align: center;
         @include tablet{
+            font-size: 6vmin;
+        }
+        @include tablet-mini{
             font-size: 6vmin;
         }
     }

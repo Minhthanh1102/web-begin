@@ -6042,14 +6042,64 @@ select {
   line-height: 21px;
   margin-bottom: 15px;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-policy ul li {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-policy ul li {
+    font-size: 3vmin;
+  }
+}
 .help-list {
   text-align: center;
   display: none;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list img {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list img {
+    margin-bottom: 10px;
+  }
 }
 .help-list h3 {
   font-style: normal;
   font-size: 3vmin;
   line-height: 14px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list h3 {
+    margin: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list h3 {
+    margin: 0;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-phone h3 {
+    margin: 5px 0;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-phone h3 {
+    margin: 5px 0;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-phone {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-phone {
+    margin-top: 20px;
+  }
 }
 .help-list-phone p {
   margin-top: 5px;
@@ -6060,13 +6110,43 @@ select {
   text-align: center;
   text-decoration-line: underline;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-phone p {
+    margin-top: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-phone p {
+    margin-top: 0;
+  }
+}
 .help-list-phone span {
   font-size: 2.5vmin;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-home {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-home {
+    margin-top: 20px;
+  }
 }
 .help-list-home span {
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-home span {
+    font-size: 2vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-home span {
+    font-size: 2vmin;
+  }
 }
 .help-list-home span a {
   text-decoration-line: underline;
@@ -6077,12 +6157,36 @@ select {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-home h3 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-home h3 {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
 .help-list-mail {
   margin-top: 15px;
 }
 .help-list-mail h3 {
   margin-top: 15px;
   margin-bottom: 5px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-mail h3 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-mail h3 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 .help-list-mail p {
   font-weight: bold;
@@ -6094,6 +6198,16 @@ select {
 .help-list-mail span {
   font-size: 2.5vmin;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-mail span {
+    line-height: 10px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-mail span {
+    line-height: 10px;
+  }
+}
 .help-list-time {
   margin-top: 15px;
 }
@@ -6101,6 +6215,19 @@ select {
   font-weight: bold;
   font-size: 3vmin;
   line-height: 14px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-time p {
+    font-size: 2.5vmin;
+    margin: 5px 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-time p {
+    font-size: 2.5vmin;
+    margin: 5px 0;
+    margin-bottom: 10px;
+  }
 }
 .help-list-time span {
   font-weight: 300;
@@ -6131,15 +6258,45 @@ select {
   font-size: 2.8vmin;
   line-height: 14px;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-border span {
+    font-size: 2.5vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-border span {
+    font-size: 2.5vmin;
+  }
+}
 .help-list-text p {
   font-weight: 300;
   font-size: 3.3vmin;
   line-height: 16px;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-text p {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-text p {
+    font-size: 3vmin;
+  }
+}
 .help-list-text span {
   font-weight: 300;
   font-size: 3vmin;
   line-height: 14px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help-list-text span {
+    font-size: 2.5vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help-list-text span {
+    font-size: 2.5vmin;
+  }
 }
 .help-head img {
   width: 100%;
@@ -6149,6 +6306,16 @@ select {
   font-weight: 300;
   font-size: 5.3vmin;
   line-height: 27px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .help h2 {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .help h2 {
+    font-size: 3vmin;
+  }
 }
 
 #help-mobile:checked ~ .help-list {
@@ -6349,12 +6516,14 @@ select {
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   .account-box-btn button {
-    padding: 20px;
+    padding: 15px;
+    font-size: 3vmin;
   }
 }
 @media (min-width: 501px) and (max-width: 740px) {
   .account-box-btn button {
-    padding: 20px;
+    padding: 15px;
+    font-size: 3vmin;
   }
 }
 .account-box-bot {
@@ -6377,11 +6546,13 @@ select {
 @media (min-width: 740px) and (max-width: 1023px) {
   .account-box-bot-right p {
     line-height: unset;
+    font-size: 3vmin;
   }
 }
 @media (min-width: 501px) and (max-width: 740px) {
   .account-box-bot-right p {
     line-height: unset;
+    font-size: 3vmin;
   }
 }
 .account-box-bot-right span {
@@ -6390,6 +6561,18 @@ select {
   line-height: 19px;
   text-align: right;
   color: #FF7A00;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .account-box-bot-right span {
+    line-height: unset;
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .account-box-bot-right span {
+    line-height: unset;
+    font-size: 3vmin;
+  }
 }
 .account-box-bot-text {
   display: flex;
@@ -6417,12 +6600,14 @@ select {
   .account-box-bot-text span {
     max-width: 200px;
     line-height: 30px;
+    font-size: 3vmin;
   }
 }
 @media (min-width: 501px) and (max-width: 740px) {
   .account-box-bot-text span {
     max-width: 200px;
     line-height: 30px;
+    font-size: 3vmin;
   }
 }
 .account-box-top {
@@ -6441,11 +6626,13 @@ select {
 @media (min-width: 740px) and (max-width: 1023px) {
   .account-box-top-left p {
     line-height: unset;
+    font-size: 2.5vmin;
   }
 }
 @media (min-width: 501px) and (max-width: 740px) {
   .account-box-top-left p {
     line-height: unset;
+    font-size: 2.5vmin;
   }
 }
 .account-box-top-left span {
@@ -6467,11 +6654,13 @@ select {
 @media (min-width: 740px) and (max-width: 1023px) {
   .account-box-top-right p {
     line-height: unset;
+    font-size: 2.5vmin;
   }
 }
 @media (min-width: 501px) and (max-width: 740px) {
   .account-box-top-right p {
     line-height: unset;
+    font-size: 2.5vmin;
   }
 }
 .account-box-top-right span {
@@ -6638,6 +6827,16 @@ select {
   width: 100%;
   height: 30px;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-address select {
+    height: 40px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-address select {
+    height: 40px;
+  }
+}
 .person-address span {
   position: absolute;
   top: 0;
@@ -6649,6 +6848,16 @@ select {
   font-size: 3.7vmin;
   line-height: 14px;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-address span {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-address span {
+    font-size: 3vmin;
+  }
+}
 .person-all {
   position: relative;
   margin-top: 25px;
@@ -6657,6 +6866,16 @@ select {
   width: 100%;
   padding: 0 10px;
   height: 30px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-all input {
+    height: 40px;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-all input {
+    height: 40px;
+  }
 }
 .person-all span {
   position: absolute;
@@ -6669,6 +6888,18 @@ select {
   font-size: 3.7vmin;
   line-height: 14px;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-all span {
+    font-size: 3vmin;
+    line-height: unset;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-all span {
+    font-size: 3vmin;
+    line-height: unset;
+  }
+}
 .person-text2 {
   display: flex;
   justify-content: space-between;
@@ -6680,12 +6911,32 @@ select {
   line-height: 16px;
   margin: 0;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-text2 p {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-text2 p {
+    font-size: 3vmin;
+  }
+}
 .person-text2 label {
   font-weight: 300;
   font-size: 4vmin;
   line-height: 16px;
   text-align: right;
   text-decoration-line: underline;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-text2 label {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-text2 label {
+    font-size: 3vmin;
+  }
 }
 .person-text {
   display: flex;
@@ -6698,12 +6949,34 @@ select {
   line-height: 16px;
   margin: 0;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-text p {
+    font-size: 3vmin;
+    line-height: unset;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-text p {
+    font-size: 3vmin;
+    line-height: unset;
+  }
+}
 .person-text label {
   font-weight: 300;
   font-size: 4vmin;
   line-height: 16px;
   text-align: right;
   text-decoration-line: underline;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .person-text label {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
+  .person-text label {
+    font-size: 3vmin;
+  }
 }
 
 .camera {
@@ -6916,6 +7189,11 @@ select {
     padding: 0 60px 60px 60px;
   }
 }
+@media (min-width: 501px) and (max-width: 740px) {
+  .policy1 {
+    padding: 0 60px 60px 60px;
+  }
+}
 .policy1-head {
   margin-top: 30px;
 }
@@ -6929,6 +7207,11 @@ select {
     font-size: 4vmin;
   }
 }
+@media (min-width: 501px) and (max-width: 740px) {
+  .policy1-all span {
+    font-size: 4vmin;
+  }
+}
 .policy1-all p {
   font-weight: 600;
   font-size: 4vmin;
@@ -6936,6 +7219,11 @@ select {
   padding: 0 20px;
 }
 @media (min-width: 740px) and (max-width: 1023px) {
+  .policy1-all p {
+    font-size: 3vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
   .policy1-all p {
     font-size: 3vmin;
   }
@@ -6952,6 +7240,11 @@ select {
     font-size: 3vmin;
   }
 }
+@media (min-width: 501px) and (max-width: 740px) {
+  .policy1-all ul li {
+    font-size: 3vmin;
+  }
+}
 .policy1 h1 {
   font-weight: 500;
   font-size: 7.4vmin;
@@ -6959,6 +7252,11 @@ select {
   text-align: center;
 }
 @media (min-width: 740px) and (max-width: 1023px) {
+  .policy1 h1 {
+    font-size: 6vmin;
+  }
+}
+@media (min-width: 501px) and (max-width: 740px) {
   .policy1 h1 {
     font-size: 6vmin;
   }
