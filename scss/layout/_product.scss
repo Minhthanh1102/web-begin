@@ -2,14 +2,15 @@
     // transform: translateY(163px);
     padding: 0 60px;
     display: flex;
+    position: relative;
     @include sm-desk{
         padding: 0 40px;
     }
-    @include tablet-mobile{
-        display: none;
-    }
+    // @include tablet-mobile{
+    //     display: none;
+    // }
     &-sort{
-        margin-left: 211px;
+        // margin-left: 211px;
         select{
             option{
                 background: #FFFFFF;
@@ -22,6 +23,8 @@
         font-style: normal;
         font-weight: 500;
         font-size: 2vmin;
+        max-width: 200px;
+        width: 100%;
         line-height: 19px;
         // letter-spacing: 0.03em;
         color: #818181;
@@ -30,9 +33,9 @@
             width: 100%;
             font-size: 14px;
         }
-        @include tablet-mobile{
-            font-size: 13px;
-        }
+        // @include tablet-mobile{
+        //     font-size: 13px;
+        // }
     }
     ul{
         margin-left: 15px;
@@ -51,10 +54,10 @@
             flex: none;
             order: 1;
             flex-grow: 0;
-            @include tablet-mobile{
-                font-size: 14px;
-                margin-left: 10px;
-            }
+            // @include tablet-mobile{
+            //     font-size: 14px;
+            //     margin-left: 10px;
+            // }
         }
     }
 }
@@ -123,17 +126,17 @@
             top: 0;
             right: 11px;
             margin: 0;
-            @include tablet-mobile{
-                // width: 30%;
-            }
+            // @include tablet-mobile{
+            //     // width: 30%;
+            // }
             img{
                 @include mobile{
                     width: 24px !important;
                     height: 24px !important;
                 }
-                @include tablet-mobile{
-                    width: 40%;
-                }
+                // @include tablet-mobile{
+                //     width: 40%;
+                // }
 
             }
         }
@@ -229,9 +232,9 @@
                 }
             &--info{
                 padding: 0 10px;
-                @include tablet-mobile{
-                    position: relative;
-                }
+                // @include tablet-mobile{
+                //     position: relative;
+                // }
                 &--name{
                     display:flex;
                     justify-content: space-between;
@@ -240,11 +243,11 @@
                     // display: flex;
                     // width: 100%;
                     &--icon{
-                        @include tablet-mobile{
-                            position: absolute;
-                            bottom: 0;
-                            right: 0;
-                        }
+                        // @include tablet-mobile{
+                        //     position: absolute;
+                        //     bottom: 0;
+                        //     right: 0;
+                        // }
                     }
                     a{
                         font-size: 16px;
@@ -278,9 +281,9 @@
                     &--new{
                         color: #FF7A00;
                         font-size: 20px;
-                        @include tablet-mobile{
-                            font-size: 14px;
-                        }
+                        // @include tablet-mobile{
+                        //     font-size: 14px;
+                        // }
                         @include mobile{
                             font-size: 12px;
                         }
@@ -292,10 +295,10 @@
                         margin-top: 5px;
                         margin-left: 10px;
                         // bottom:0;
-                        @include tablet-mobile{
-                            margin: 0 5px;
-                            font-size: 14px;
-                        }
+                        // @include tablet-mobile{
+                        //     margin: 0 5px;
+                        //     font-size: 14px;
+                        // }
                         @include mobile{
                             font-size: 8px;
                         }
@@ -419,9 +422,9 @@
 }
 .pp{
     display: none;
-    @include tablet-mobile{
-        display: block;
-    }
+    // @include tablet-mobile{
+    //     display: block;
+    // }
     @include mobile{
         display: block;
     }
@@ -483,6 +486,44 @@
 #female-hide-mobile:checked ~ .female-flex-hide{
     transform: translateX(0);
     display: block;
+}
+#categray:checked ~ .product-catalog-bochon{
+color: red;
+}
+.product-catalog-sort{
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    label{
+        font-weight: 500;
+        font-size: 2.5vmin;
+        text-align: center;
+        color: #818181;
+    }
+}
+.product-catalog-sort-mini{
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+    text-align: left;
+    padding: 0 5px;
+    p{
+        font-size: 2vmin;
+    }
+}
+.product-catalog-bochon{
+    font-size: 2vmin;
+    color: red;
+    margin-left: 20px;
+}
+#sortmini:checked ~ .product-catalog-sort-mini{
+display: block;
 }
 // #female-hide-mobile:checked ~ .female-flex-hide{
 //     transform: translateX(0);

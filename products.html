@@ -275,32 +275,35 @@
     <div class="product-catalog-list">
         <ul>
             <li>
-                <input type="radio" checked="checked" name="cate"> Tất cả
+                <input class="allcate" type="radio" checked="checked" name="cate"> Tất cả
             </li>
             <li>
-                <input type="radio" checked="checked" name="cate">Áo thun
+                <input id="categray" type="radio" name="cate2">Áo thun
             </li>
             <li>
-                <input type="radio" checked="checked" name="cate">Áo sơ mi
+                <input id="categray" type="radio" name="cate3">Áo sơ mi
             </li>
             <li>
-                <input type="radio" checked="checked" name="cate">Quần short
+                <input id="categray" type="radio" name="cate4">Quần short
             </li>
             <li>
-                <input type="radio" checked="checked" name="cate">Quần dài
+                <input id="categray" type="radio" name="cate5">Quần dài
             </li>
             <li>
-                <input type="radio" checked="checked" name="cate">Phụ kiện
+                <input id="categray" type="radio" name="cate6">Phụ kiện
             </li>
         </ul>
     </div>
+    <div class="product-catalog-bochon">
+      x Bỏ chọn
+    </div>
     <div class="product-catalog-sort">
-        <select name="sort" id="">
-            <option value="">
-                Sắp xếp theo
-
-            </option>
-        </select>
+      <label for="sortmini">Sắp xếp theo</label>
+      <input type="checkbox" hidden name="" id="sortmini">
+      <div class="product-catalog-sort-mini">
+        <p>Giá tăng dần</p>
+        <p>Giá giảm dần</p>
+      </div>
     </div>
 </div>
 <div class="product">
