@@ -281,13 +281,13 @@
                             font-size: 13px;
                         }
                         @include tablet{
-                            font-size: 1.8vmin;
+                            font-size: 1.7vmin;
                         }
                         @include tablet-mini{
-                            font-size: 1.8vmin;
+                            font-size: 1.7vmin;
                         }
                         @include mobile{
-                            font-size: 12px;
+                            font-size: 2.5vmin;
                         }
                     }
                     img{
@@ -322,10 +322,10 @@
                         //     font-size: 14px;
                         // }
                         @include tablet{
-                            font-size: 3vmin;
+                            font-size: 2.5vmin;
                         }
                         @include tablet-mini{
-                            font-size: 3vmin;
+                            font-size: 2.5vmin;
                         }
                         @include mobile{
                             font-size: 12px;
@@ -344,9 +344,11 @@
                         // }
                         @include tablet{
                             font-size: 2.5vmin;
+                            margin-top: 0;
                         }
                         @include tablet-mini{
                             font-size: 2.5vmin;
+                            margin-top: 0;
                         }
                         @include mobile{
                             font-size: 8px;
@@ -585,7 +587,17 @@ display: block;
         display: none;
     }
 }
-
+.product-products-item--hover{
+    @include tablet{
+        display: none;
+    }
+    @include tablet-mini{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+}
 // #female-hide-mobile:checked ~ .female-flex-hide{
 //     transform: translateX(0);
 //     display: block;

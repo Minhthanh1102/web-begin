@@ -84,6 +84,15 @@
                 bottom: 10%;
                 // cursor: pointer;
                 opacity: 1;
+                @include tablet{
+                    display: none;
+                }
+                @include tablet-mini{
+                    display: none;
+                }
+                @include mobile{
+                    display: none;
+                }
             }
             @include tablet-mini{
                 margin-right: 10px;
@@ -154,6 +163,15 @@
                 bottom: 10%;
                 // cursor: pointer;
                 opacity: 1;
+                @include tablet{
+                    display: none;
+                }
+                @include tablet-mini{
+                    display: none;
+                }
+                @include mobile{
+                    display: none;
+                }
             }
             @include tablet-mini{
                 // margin-left: 20px;
@@ -231,6 +249,15 @@
                 bottom: 10%;
                 // cursor: pointer;
                 opacity: 1;
+                @include tablet{
+                    display: none;
+                }
+                @include tablet-mini{
+                    display: none;
+                }
+                @include mobile{
+                    display: none;
+                }
             }
             @include tablet-mini{
                 // margin-left: 20px;

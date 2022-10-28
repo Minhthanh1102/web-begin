@@ -196,6 +196,7 @@
     }
     &-item{
         margin-bottom: 10px;
+        
         @include tablet-mini{
             margin-bottom: 5px;
         }
@@ -242,6 +243,11 @@
     }
 }
 .menu-item-mobile{
+    display: flex;
+    align-items: center;
+    a{
+        margin-left: 5px;
+    }
     @include tablet-mini{
 
         text-align: left;
@@ -254,6 +260,11 @@
     }
 }
 .menu-item-mobile2{
+    display: flex;
+    align-items: center;
+    a{
+        margin-left: 5px;
+    }
     @include tablet-mini{
 
         text-align: left;
